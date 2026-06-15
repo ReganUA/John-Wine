@@ -9,6 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
+    path: Assets/Scenes/ActualLevels/Staircase.unity
+    guid: d04f05ffcd162994fb7daf59f10eec49
+  - enabled: 1
+    path: Assets/Scenes/ActualLevels/Colleseum.unity
+    guid: 4a8c6d9906eccee4381391307e02efdf
+  - enabled: 1
     path: Assets/Scenes/ActualLevels/Dinosys Fight.unity
     guid: 7ccec94782d84af4890912c1c7aafee5
   m_configObjects:
