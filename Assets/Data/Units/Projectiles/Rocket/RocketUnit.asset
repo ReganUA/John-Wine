@@ -23,7 +23,8 @@ MonoBehaviour:
     Abilities: []
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
-    TemporaryBehaviour: {fileID: 0}
+    TemporaryBehaviour: {fileID: 11400000, guid: a13e20b9ac12a1247bc3a339c10f1bc6, type: 2}
     PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 0}
   Tags: 1
   Team: 1

@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   _unit: {fileID: 654515839}
-  CameraTransform: {fileID: 879862612}
+  Camera: {fileID: 0}
   FirePoint: {fileID: 1159256593}
   PushPower: 2
   CoyoteTime: 0.3
@@ -543,7 +543,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Unit
   UnitSO: {fileID: 11400000, guid: 1ec9649f03d00cf48b643d9b5a687f58, type: 2}
-  ControllerScript: {fileID: 654515838}
+  <ControllerScript>k__BackingField: {fileID: 0}
+  <Turret>k__BackingField: {fileID: 0}
   Refs:
     RB: {fileID: 0}
     CC: {fileID: 654515834}
@@ -701,12 +702,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   key: {fileID: 2024115900}
-  keyPos: {fileID: 1361387696}
   targetRotation:
   - {x: 0, y: 90, z: 0}
   rotationTime: 1
   targetPosition: []
   positionTime: 0
+  effect: {fileID: 0}
 --- !u!1 &712048149
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +914,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Unit
   UnitSO: {fileID: 11400000, guid: cb4144af54420ff46a521ffe061715ee, type: 2}
-  ControllerScript: {fileID: 879862613}
+  <ControllerScript>k__BackingField: {fileID: 0}
+  <Turret>k__BackingField: {fileID: 0}
   Refs:
     RB: {fileID: 0}
     CC: {fileID: 0}
@@ -930,9 +932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc6f936044e21f458ce6fbf0242cebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemSys
-  heldItems:
-  - {fileID: 0}
-  itemsDisplayed: []
+  _unit: {fileID: 0}
   imagePrefab: {fileID: 4823961851833257503, guid: 4b1385b76c6b99f4898eff09907cfe69, type: 3}
   itemDisplay: {fileID: 1179313460}
 --- !u!1 &939175577
@@ -1657,7 +1657,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Unit
   UnitSO: {fileID: 11400000, guid: 0ccd19c1c1315f046831f0f4b0e979cd, type: 2}
-  ControllerScript: {fileID: 1589428128}
+  <ControllerScript>k__BackingField: {fileID: 0}
+  <Turret>k__BackingField: {fileID: 0}
   Refs:
     RB: {fileID: 0}
     CC: {fileID: 0}
@@ -2113,7 +2114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Unit
   UnitSO: {fileID: 11400000, guid: 843f8d5d2718c894493e7c389246e7fd, type: 2}
-  ControllerScript: {fileID: 0}
+  <ControllerScript>k__BackingField: {fileID: 0}
+  <Turret>k__BackingField: {fileID: 0}
   Refs:
     RB: {fileID: 0}
     CC: {fileID: 0}

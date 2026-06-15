@@ -4,8 +4,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Default Spawn Ability", menuName = "Components/Compound/Ability/Default Spawn Ability")]
 public class SpawnAbility : AbilitySO
 {
-    public override void Fire(ComponentRuntimeStats statsCarrier, PositionArgs raycastPos, PositionArgs firePointPos, Unit sourceUnit)
+    public override Unit Fire(ComponentRuntimeStats statsCarrier, PositionArgs raycastPos, PositionArgs firePointPos, Unit sourceUnit)
     {
+        Unit spawned = null;
         Debug.Log("Fire!");
         if (LaunchComponents.Effect != null)
             LaunchComponents.Effect.Affect(sourceUnit, statsCarrier);
@@ -41,11 +42,18 @@ public class SpawnAbility : AbilitySO
 
         if (LaunchComponents.UnitSpawner != null)
         {
-            Unit spawned = LaunchComponents.UnitSpawner.Spawn(firePointPos, sourceUnit);
+            spawned = LaunchComponents.UnitSpawner.Spawn(firePointPos, sourceUnit);
             if (spawned != null && spawned.ControllerScript is IAbilityConfigCarrier abilityCarrier)
                 abilityCarrier.abilitySO = this;
             spawned.OnSpawn(sourceUnit);
         }
+
+        if (LaunchComponents.Emitter != null)
+        {
+            LaunchComponents.Emitter.Emit(new PositionArgs(firePointPos.position, firePointPos.rotation));
+        }
+
+        return spawned;
     }
     public override void OnHit(ComponentRuntimeStats statsCarrier, PositionArgs hitPos, Unit sourceUnit, Unit hitUnit)
     {
@@ -77,5 +85,14 @@ public class SpawnAbility : AbilitySO
             Unit spawned = ImpactComponents.UnitSpawner.Spawn(new PositionArgs(hitPos.position, Quaternion.identity), sourceUnit);
             spawned.OnSpawn(sourceUnit);
         }
+
+        if(ImpactComponents.Emitter != null)
+        {
+            ImpactComponents.Emitter.Emit(new PositionArgs(hitPos.position, Quaternion.identity));
+        }
+    }
+    public override Ability CreateAbility(ComponentRuntimeStats statsCarrier)
+    {
+        return new Ability(this, statsCarrier);
     }
 }

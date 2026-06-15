@@ -1,10 +1,11 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Default Weapon", menuName = "Components/Compound/Ability/Raycast Ability")]
+[CreateAssetMenu(fileName = "Raycast Ability", menuName = "Components/Compound/Ability/Default Raycast Ability")]
 public class RaycastAbility : AbilitySO
 {
-    public override void Fire(ComponentRuntimeStats statsCarrier, PositionArgs raycastPos, PositionArgs firePointPos, Unit sourceUnit)
+    public override Unit Fire(ComponentRuntimeStats statsCarrier, PositionArgs raycastPos, PositionArgs firePointPos, Unit sourceUnit)
     {
+        Unit spawned = null;
         if (LaunchComponents.Effect != null)
             LaunchComponents.Effect.Affect(sourceUnit, statsCarrier);
 
@@ -27,7 +28,7 @@ public class RaycastAbility : AbilitySO
 
         if (LaunchComponents.UnitSpawner != null)
         {
-            Unit spawned = LaunchComponents.UnitSpawner.Spawn(raycastPos, sourceUnit);
+            spawned = LaunchComponents.UnitSpawner.Spawn(raycastPos, sourceUnit);
             if (spawned != null && spawned.ControllerScript is IAbilityConfigCarrier abilityCarrier)
                 abilityCarrier.abilitySO = this;
             spawned.OnSpawn(sourceUnit);
@@ -42,6 +43,8 @@ public class RaycastAbility : AbilitySO
         }
         else
             Debug.DrawLine(raycastPos.position, raycastPos.position + raycastPos.direction * statsCarrier.GetStats(LaunchComponents.Raycaster).Range, Color.red, 0.05f);
+
+        return spawned;
     }
     public override void OnHit(ComponentRuntimeStats statsCarrier, PositionArgs hitPos, Unit sourceUnit, Unit hitUnit)
     {
@@ -73,5 +76,9 @@ public class RaycastAbility : AbilitySO
             Unit spawned = ImpactComponents.UnitSpawner.Spawn(new PositionArgs(hitPos.position, Quaternion.identity), sourceUnit);
             spawned.OnSpawn(sourceUnit);
         }
+    }
+    public override Ability CreateAbility(ComponentRuntimeStats statsCarrier)
+    {
+        return new Ability(this, statsCarrier);
     }
 }

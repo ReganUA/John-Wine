@@ -54,7 +54,7 @@ public class EnemyPathfinding : MonoBehaviour, IUpdatable
 
         _agent.nextPosition = transform.position;
 
-        if (NavMesh.SamplePosition(playerTarget.position, out NavMeshHit hit, 10f, NavMesh.AllAreas))
+        if (NavMesh.SamplePosition(playerTarget.position, out NavMeshHit hit, 5f, NavMesh.AllAreas))
         {
             _groundedPlayerPos = hit.position;
         }
@@ -68,6 +68,11 @@ public class EnemyPathfinding : MonoBehaviour, IUpdatable
 
         GetToken();
         Mover(deltaTime);
+
+        if (NavMesh.SamplePosition(transform.position, out NavMeshHit groundHit, 5f, NavMesh.AllAreas))
+        {
+            transform.position = new Vector3(transform.position.x, groundHit.position.y, transform.position.z);
+        }
     }
     private void GetToken()
     {

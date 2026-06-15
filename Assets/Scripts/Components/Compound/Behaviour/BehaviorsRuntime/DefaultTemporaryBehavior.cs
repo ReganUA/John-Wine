@@ -12,5 +12,5 @@ public sealed class DefaultTemporaryBehavior : TemporaryBehavior
         if (EndComponents.Effect != null)
             EndComponents.Effect.Affect(target, statsCarrier);
     }
-    public DefaultTemporaryBehavior(TemporaryBehaviorSO config, Unit targetUnit, SimulationComponentsPack startComponents, SimulationComponentsPack endComponents) : base(config, targetUnit, startComponents, endComponents) { }
+    public DefaultTemporaryBehavior(TemporaryBehaviorSO config, Unit targetUnit, ComponentsPack startComponents, ComponentsPack endComponents) : base(config, targetUnit, startComponents, endComponents) { }
 }

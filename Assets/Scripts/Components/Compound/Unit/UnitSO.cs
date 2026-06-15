@@ -7,12 +7,12 @@ public class UnitSO : ScriptableObject
 {
     [Header("General")]
     public StatsTemplate StatsTemplate;
-    [SerializeField] public SimulationComponentsPack SimComponents;
+    [SerializeField] public ComponentsPack SimComponents;
     public Tags Tags;
     public Team Team;
 }
 [Serializable]
-public struct SimulationComponentsPack
+public struct ComponentsPack
 {
     public SensorSO Sensor;
     public RaycasterSO Raycaster;
@@ -23,6 +23,7 @@ public struct SimulationComponentsPack
     public EffectSO Effect;
     public TemporaryBehaviorSO TemporaryBehaviour;
     public PeriodicBehaviorSO PeriodicBehaviour;
+    public EmitterSO Emitter;
 }
 [Serializable]
 public struct Movers

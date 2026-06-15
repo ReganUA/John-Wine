@@ -1,34 +1,41 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class AbilitySO : ScriptableObject
 {
     [field: SerializeField] public AbilityStats Stats { get; set; }
     [Header("Launch")]
-    [SerializeField] internal SimulationComponentsPack LaunchComponents;
+    [SerializeField] internal ComponentsPack LaunchComponents;
     [Header("Impact")]
-    [SerializeField] internal SimulationComponentsPack ImpactComponents;
-    public abstract void Fire(ComponentRuntimeStats statsCarrier, PositionArgs raycastPos, PositionArgs firePointPos, Unit owner = null);
+    [SerializeField] internal ComponentsPack ImpactComponents;
+    public abstract Unit Fire(ComponentRuntimeStats statsCarrier, PositionArgs raycastPos, PositionArgs firePointPos, Unit sourceUnit);
     public abstract void OnHit(ComponentRuntimeStats statsCarrier, PositionArgs hitPos, Unit sourceUnit, Unit hitUnit);
+    public abstract Ability CreateAbility(ComponentRuntimeStats statsCarrier);
 }
+[Serializable]
 public class Ability
 {
+    public bool CanShoot;
+    public bool IsBlocked;
+    public List<Unit> Spawned = new();
+
+
     public AbilitySO config;
     protected ComponentRuntimeStats RuntimeStats;
     protected Unit owner;
 
-    public bool CanShoot;
 
     private float _reloadProgress = 0;
     private ModifiableStats<AbilityStats> _stats;
-    public void Fire(PositionArgs raycastPos, PositionArgs firePointPos, Unit whoFired)
+    public virtual void Fire(PositionArgs raycastPos, PositionArgs firePointPos, Unit whoFired)
     {
-        config.Fire(RuntimeStats, raycastPos, firePointPos, whoFired);
+        Unit spawned = config.Fire(RuntimeStats, raycastPos, firePointPos, whoFired);
+
+        Spawned.Add(spawned);
     }
-    public void OnHit(PositionArgs hitPos, Unit sourceUnit, Unit hitUnit)
-    {
-        config.OnHit(RuntimeStats, hitPos, sourceUnit, hitUnit);
-    }
+    public virtual void Hold(PositionArgs raycastPos, PositionArgs firePointPos, float dt) { }
+    public virtual void Release() { }
     public void ReloadProgress(float dt)
     {
         if (_reloadProgress < 1.0f)
@@ -47,12 +54,12 @@ public class Ability
         CanShoot = false;
         _reloadProgress = 0;
     }
-    public Ability(AbilitySO c, ComponentRuntimeStats s)
+    public Ability(AbilitySO so, ComponentRuntimeStats statsCarrier)
     {
-        config = c;
-        RuntimeStats = s;
+        config = so;
+        RuntimeStats = statsCarrier;
 
-        _stats = s.GetStatsModifiable(config);
+        _stats = statsCarrier.GetStatsModifiable(config);
     }
 }
 [Serializable]

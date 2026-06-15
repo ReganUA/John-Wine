@@ -26,6 +26,7 @@ MonoBehaviour:
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 11400000, guid: c46bbf2f2b26314488804328285c17c4, type: 2}
   ImpactComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
@@ -38,3 +39,4 @@ MonoBehaviour:
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 11400000, guid: 153b36aa2f16d1e4d8d24dc59ce8a193, type: 2}

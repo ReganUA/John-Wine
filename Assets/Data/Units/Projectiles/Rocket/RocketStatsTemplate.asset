@@ -13,14 +13,8 @@ MonoBehaviour:
   m_Name: RocketStatsTemplate
   m_EditorClassIdentifier: Assembly-CSharp::StatsTemplate
   Health:
-    MaxHealth: 0
-    HealthOnStart: 0
+    MaxHealth: 1
+    HealthOnStart: 1
     Armor: 0
     Regeneration: 0
     RegenerationDelay: 0
-  Movement:
-    MaxSpeed: 50
-    Acceleration: 100
-    Deceleration: 0
-    JumpForce: 0
-    Gravity: 0

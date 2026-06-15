@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class ItemSys : Controller, IUpdatable
 {
-    public List<GameObject> heldItems = new();
-    public List<GameObject> itemsDisplayed = new();
-
     public GameObject imagePrefab;
     public Transform itemDisplay;
     public override void OnStart()
@@ -20,13 +17,13 @@ public class ItemSys : Controller, IUpdatable
     public bool GetKey(InteractiveBaseEnviroment target)
     {
         if (target == null) return false;
-        if (heldItems == null || heldItems.Count == 0) return false;
+        if (InventoryManager.instance.heldItems == null || InventoryManager.instance.heldItems.Count == 0) return false;
 
-        for (int i = 0; i < heldItems.Count; i++)
+        for (int i = 0; i < InventoryManager.instance.heldItems.Count; i++)
         {
-            if (heldItems[i] != null && heldItems[i].TryGetComponent(out Unit unit) && target.CheckKey(unit.UnitSO))
+            if (InventoryManager.instance.heldItems[i] != null && InventoryManager.instance.heldItems[i].TryGetComponent(out Unit unit) && target.CheckKey(unit.UnitSO))
             {
-                heldItems.RemoveAt(i);
+                InventoryManager.instance.heldItems.RemoveAt(i);
                 Destroy(itemDisplay.GetChild(0).gameObject);
                 return true;
             }
@@ -35,7 +32,7 @@ public class ItemSys : Controller, IUpdatable
     }
     public void AddItem(GameObject item)
     {
-        heldItems.Add(item);
+        InventoryManager.instance.heldItems.Add(item);
         item.SetActive(false);
 
         ItemDisplay();

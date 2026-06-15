@@ -15,7 +15,7 @@ public class ComponentRuntimeStats
     Dictionary<TemporaryBehaviorSO, ModifiableStats<TemporaryBehaviorStats>> TemporaryBehaviorStats = new();
     Dictionary<PeriodicBehaviorSO, ModifiableStats<PeriodicBehaviorStats>> PeriodicBehaviorStats = new();
 
-    public void SetComponentsStats(SimulationComponentsPack pack)
+    public void SetComponentsStats(ComponentsPack pack)
     {
         for (int i = pack.Abilities.Count - 1; i >= 0; i--)
         {

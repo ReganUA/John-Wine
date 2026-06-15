@@ -20,10 +20,11 @@ MonoBehaviour:
     Movers:
       Mover: {fileID: 0}
       RotationalMover: {fileID: 11400000, guid: ab37f2302aa66e64b8cf0648f267f1ea, type: 2}
-    Abilities:
-    - {fileID: 11400000, guid: f7a7c0801d0f64c4da488cb18e15ce1d, type: 2}
+    Abilities: []
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 0}
   Tags: 16
+  Team: 0

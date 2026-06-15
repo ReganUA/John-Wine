@@ -142,6 +142,9 @@ public class DefaultAreaSearch : AreaSearchSO
 
             if (Stats.Components.UnitSpawner != null)
                 Stats.Components.UnitSpawner.Spawn(new PositionArgs(_u.transform.position, rot, dir), sourceUnit);
+
+            if (Stats.Components.Emitter != null)
+                Stats.Components.Emitter.Emit(new PositionArgs(_u.transform.position, rot, dir), _u.gameObject.transform);
         }
 
         return _detectedUnitsCache;

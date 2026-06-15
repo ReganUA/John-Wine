@@ -17,4 +17,5 @@ MonoBehaviour:
     LayerFilter:
       serializedVersion: 2
       m_Bits: 64
+    TeamsFilter: 8
     DetectOwner: 0

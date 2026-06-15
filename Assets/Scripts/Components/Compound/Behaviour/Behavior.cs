@@ -22,8 +22,8 @@ public class TemporaryBehavior : Behavior
     public ModifiableStats<TemporaryBehaviorStats> Stats;
 
     protected TemporaryBehaviorSO config;
-    protected SimulationComponentsPack StartComponents;
-    protected SimulationComponentsPack EndComponents;
+    protected ComponentsPack StartComponents;
+    protected ComponentsPack EndComponents;
 
     public virtual void OnStart()
     {
@@ -46,7 +46,7 @@ public class TemporaryBehavior : Behavior
     {
 
     }
-    public TemporaryBehavior(TemporaryBehaviorSO config, Unit targetUnit, SimulationComponentsPack startComponents, SimulationComponentsPack endComponents) : base(targetUnit)
+    public TemporaryBehavior(TemporaryBehaviorSO config, Unit targetUnit, ComponentsPack startComponents, ComponentsPack endComponents) : base(targetUnit)
     {
         this.config = config;
         StartComponents = startComponents;
@@ -64,7 +64,7 @@ public class PeriodicBehavior : Behavior
     public ModifiableStats<PeriodicBehaviorStats> Stats;
 
     protected PeriodicBehaviorSO config;
-    protected SimulationComponentsPack PeriodicComponents;
+    protected ComponentsPack PeriodicComponents;
 
     private float _periodProgress;
     public virtual void OnPeriod()
@@ -100,7 +100,7 @@ public class PeriodicBehavior : Behavior
         PeriodTicked = false;
         _periodProgress = 0;
     }
-    public PeriodicBehavior(PeriodicBehaviorSO config, Unit targetUnit, SimulationComponentsPack periodicComponents) : base(targetUnit)
+    public PeriodicBehavior(PeriodicBehaviorSO config, Unit targetUnit, ComponentsPack periodicComponents) : base(targetUnit)
     {
         this.config = config;
         PeriodicComponents = periodicComponents;

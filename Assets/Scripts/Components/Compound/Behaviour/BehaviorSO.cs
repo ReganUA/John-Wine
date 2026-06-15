@@ -10,13 +10,13 @@ public abstract class BehaviorSO : ScriptableObject
 public abstract class TemporaryBehaviorSO : BehaviorSO
 {
     [field: SerializeField] public TemporaryBehaviorStats Stats { get; private set; }
-    [SerializeField] public SimulationComponentsPack StartComponents;
-    [SerializeField] public SimulationComponentsPack EndComponents;
+    [SerializeField] public ComponentsPack StartComponents;
+    [SerializeField] public ComponentsPack EndComponents;
 }
 public abstract class PeriodicBehaviorSO : BehaviorSO
 {
     [field: SerializeField] public PeriodicBehaviorStats Stats { get; private set; }
-    [SerializeField] public SimulationComponentsPack PeriodicComponents;
+    [SerializeField] public ComponentsPack PeriodicComponents;
 }
 [Serializable]
 public struct TemporaryBehaviorStats

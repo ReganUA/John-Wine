@@ -22,9 +22,11 @@ MonoBehaviour:
       RotationalMover: {fileID: 0}
     Abilities:
     - {fileID: 11400000, guid: 914f291329183a64f9452f968b430af1, type: 2}
+    - {fileID: 11400000, guid: 532a686fddc8dc24087c934a6783609e, type: 2}
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 0}
   Tags: 2
   Team: 1
