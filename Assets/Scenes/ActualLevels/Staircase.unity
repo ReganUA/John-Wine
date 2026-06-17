@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 9d0dd12c707cf1d4ca9b24467bf196d6, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -303,11 +303,6 @@ PrefabInstance:
 --- !u!1 &42096929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2696774352917237980, guid: a9b7b40a780ce304bb41a4c0d554bb36, type: 3}
-  m_PrefabInstance: {fileID: 42096928}
-  m_PrefabAsset: {fileID: 0}
---- !u!20 &42096930 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 8206707388879464783, guid: a9b7b40a780ce304bb41a4c0d554bb36, type: 3}
   m_PrefabInstance: {fileID: 42096928}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &48744015
@@ -5725,7 +5720,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 42096930}
+  m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

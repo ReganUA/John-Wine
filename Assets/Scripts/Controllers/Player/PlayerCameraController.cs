@@ -41,6 +41,12 @@ public sealed class PlayerCameraController : Controller, IUpdatable
                     InteractiveBaseEnviroment enviromentTarget = target.GetComponent<InteractiveBaseEnviroment>();
                     if (target != null)
                     {
+                        if (enviromentTarget.key == null)
+                        {
+                            enviromentTarget.Interact();
+                            return;
+                        }
+
                         if (itemSys.GetKey(enviromentTarget) == true)
                         {
                             enviromentTarget.Interact();

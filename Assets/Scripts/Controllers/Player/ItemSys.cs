@@ -8,11 +8,24 @@ public class ItemSys : Controller, IUpdatable
     public Transform itemDisplay;
     public override void OnStart()
     {
-    
+
     }
     public void OnUpdate(float dt)
     {
 
+    }
+    void Start()
+    {
+        if (InventoryManager.instance.itemsDisplayed.Count > 0)
+        {
+            if (itemDisplay.childCount == 0)
+            {
+                foreach (GameObject item in InventoryManager.instance.itemsDisplayed)
+                {
+                    Instantiate(imagePrefab, itemDisplay);
+                }
+            }
+        } 
     }
     public bool GetKey(InteractiveBaseEnviroment target)
     {
@@ -24,6 +37,7 @@ public class ItemSys : Controller, IUpdatable
             if (InventoryManager.instance.heldItems[i] != null && InventoryManager.instance.heldItems[i].TryGetComponent(out Unit unit) && target.CheckKey(unit.UnitSO))
             {
                 InventoryManager.instance.heldItems.RemoveAt(i);
+                InventoryManager.instance.itemsDisplayed.RemoveAt(i);
                 Destroy(itemDisplay.GetChild(0).gameObject);
                 return true;
             }
@@ -33,12 +47,14 @@ public class ItemSys : Controller, IUpdatable
     public void AddItem(GameObject item)
     {
         InventoryManager.instance.heldItems.Add(item);
+        DontDestroyOnLoad(item);
         item.SetActive(false);
 
         ItemDisplay();
     }
     private void ItemDisplay()
     {
-        Instantiate(imagePrefab, itemDisplay);
+        GameObject ui = Instantiate(imagePrefab, itemDisplay);
+        InventoryManager.instance.itemsDisplayed.Add(ui);
     }
 }
