@@ -8,7 +8,7 @@ public class ItemSys : Controller, IUpdatable
     public Transform itemDisplay;
     public override void OnStart()
     {
-
+        
     }
     public void OnUpdate(float dt)
     {
@@ -16,6 +16,8 @@ public class ItemSys : Controller, IUpdatable
     }
     void Start()
     {
+        itemDisplay = InventoryContainer.instance.gameObject.transform;
+
         if (InventoryManager.instance.itemsDisplayed.Count > 0)
         {
             if (itemDisplay.childCount == 0)

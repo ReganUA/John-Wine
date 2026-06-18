@@ -121,6 +121,8 @@ public class InteractiveBaseEnviroment : MonoBehaviour
     public void TriggerEffect()
     {
         if (effect == null) return;
+
+        Debug.Log("Triggered effect");
         effect.Play();
     }
     public void DisableInteract()
