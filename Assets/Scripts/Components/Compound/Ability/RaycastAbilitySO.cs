@@ -1,13 +1,11 @@
-using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Default Spawn Ability", menuName = "Components/Compound/Ability/Default Spawn Ability")]
-public class SpawnAbility : AbilitySO
+[CreateAssetMenu(fileName = "Raycast Ability", menuName = "Components/Compound/Ability/Default Raycast Ability")]
+public class RaycastAbilitySO : AbilitySO
 {
     public override Unit Fire(ComponentRuntimeStats statsCarrier, PositionArgs raycastPos, PositionArgs firePointPos, Unit sourceUnit)
     {
         Unit spawned = null;
-        Debug.Log("Fire!");
         if (LaunchComponents.Effect != null)
             LaunchComponents.Effect.Affect(sourceUnit, statsCarrier);
 
@@ -20,18 +18,6 @@ public class SpawnAbility : AbilitySO
         if (LaunchComponents.AreaSearcher != null)
             LaunchComponents.AreaSearcher.Search(statsCarrier, raycastPos, sourceUnit);
 
-        if (LaunchComponents.Raycaster != null)
-        {
-            RaycastHit _hit = LaunchComponents.Raycaster.Raycast(statsCarrier, raycastPos.position, raycastPos.direction);
-
-            if (_hit.point != default && _hit.distance > 1)
-            {
-                Vector3 _desiredFireDirection = (_hit.point - firePointPos.position).normalized;
-
-                firePointPos = new PositionArgs(firePointPos.position, Quaternion.LookRotation(_desiredFireDirection), firePointPos.direction);
-            }
-        }
-
         if (LaunchComponents.Abilities != null)
         {
             for (int j = 0; j < LaunchComponents.Abilities.Count; j++)
@@ -42,16 +28,21 @@ public class SpawnAbility : AbilitySO
 
         if (LaunchComponents.UnitSpawner != null)
         {
-            spawned = LaunchComponents.UnitSpawner.Spawn(firePointPos, sourceUnit);
+            spawned = LaunchComponents.UnitSpawner.Spawn(raycastPos, sourceUnit);
             if (spawned != null && spawned.ControllerScript is IAbilityConfigCarrier abilityCarrier)
                 abilityCarrier.abilitySO = this;
             spawned.OnSpawn(sourceUnit);
         }
 
-        if (LaunchComponents.Emitter != null)
+        RaycastHit _hit = LaunchComponents.Raycaster.Raycast(statsCarrier, raycastPos.position, raycastPos.direction);
+        if (_hit.collider != null)
         {
-            LaunchComponents.Emitter.Emit(new PositionArgs(firePointPos.position, firePointPos.rotation));
+            _hit.collider.TryGetComponent(out Unit hitUnit);
+            OnHit(statsCarrier, new PositionArgs(_hit.point, raycastPos.rotation, raycastPos.direction), sourceUnit, hitUnit);
+            Debug.DrawLine(raycastPos.position, _hit.point, Color.red, 0.05f);
         }
+        else
+            Debug.DrawLine(raycastPos.position, raycastPos.position + raycastPos.direction * statsCarrier.GetStats(LaunchComponents.Raycaster).Range, Color.red, 0.05f);
 
         return spawned;
     }
@@ -84,11 +75,6 @@ public class SpawnAbility : AbilitySO
         {
             Unit spawned = ImpactComponents.UnitSpawner.Spawn(new PositionArgs(hitPos.position, Quaternion.identity), sourceUnit);
             spawned.OnSpawn(sourceUnit);
-        }
-
-        if(ImpactComponents.Emitter != null)
-        {
-            ImpactComponents.Emitter.Emit(new PositionArgs(hitPos.position, Quaternion.identity));
         }
     }
     public override Ability CreateAbility(ComponentRuntimeStats statsCarrier)

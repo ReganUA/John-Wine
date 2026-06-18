@@ -33,6 +33,7 @@ public sealed class SawAbility : Ability
 
             Spawned[i].UnitSO.SimComponents.Movers.Mover.Move(Spawned[i], dir, dt);
         }
+        IsShooting = true;
     }
     public override void Release()
     {
@@ -43,6 +44,7 @@ public sealed class SawAbility : Ability
             spawned.Die();
         }
         IsBlocked = false;
+        IsShooting = false;
     }
     public SawAbility(AbilitySO so, ComponentRuntimeStats statsCarrier) : base(so, statsCarrier) { }
 }

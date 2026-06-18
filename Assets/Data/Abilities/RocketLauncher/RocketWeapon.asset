@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RocketWeapon
   m_EditorClassIdentifier: Assembly-CSharp::DefaultWeapon
   <Stats>k__BackingField:
-    ReloadSpeed: 0.2
+    ReloadSpeed: 1
   LaunchComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 11400000, guid: 74f7da0b6a378274183c08485fcc0211, type: 2}
