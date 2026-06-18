@@ -9,12 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd2bbd2e3ad01db418c610b58a6b3de1, type: 3}
-  m_Name: M16Raycast
-  m_EditorClassIdentifier: Assembly-CSharp::DefaultRaycaster
+  m_Script: {fileID: 11500000, guid: 81e9d25613f45594eabac995dd803d70, type: 3}
+  m_Name: WineBarrelMover
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultMover
   <Stats>k__BackingField:
-    Range: 30
-    Layer:
-      serializedVersion: 2
-      m_Bits: 65
-    Emitter: {fileID: 0}
+    MaxSpeed: 20
+    Acceleration: 99999
+    Deceleration: 99999
+    AirDeceleration: 0
+    Gravity: -0.5
+    JumpForce: 0

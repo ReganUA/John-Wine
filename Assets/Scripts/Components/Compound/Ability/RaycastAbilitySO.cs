@@ -29,7 +29,7 @@ public class RaycastAbilitySO : AbilitySO
         if (LaunchComponents.UnitSpawner != null)
         {
             spawned = LaunchComponents.UnitSpawner.Spawn(raycastPos, sourceUnit);
-            if (spawned != null && spawned.ControllerScript is IAbilityConfigCarrier abilityCarrier)
+            if (spawned != null && spawned.ControllerScript is ISpawned abilityCarrier)
                 abilityCarrier.abilitySO = this;
             spawned.OnSpawn(sourceUnit);
         }

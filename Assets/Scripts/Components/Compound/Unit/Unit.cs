@@ -154,7 +154,7 @@ public class HealthState
         _statsRef = stats;
     }
 }
-public interface IAbilityConfigCarrier
+public interface ISpawned
 {
     public AbilitySO abilitySO { get; set; }
 }

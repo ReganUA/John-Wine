@@ -1,9 +1,8 @@
 using UnityEngine;
 
-public sealed class RocketController : Controller, IUpdatable, ISpawned
+public sealed class WineBarrelController : Controller, IUpdatable, ISpawned
 {
     public AbilitySO abilitySO { get; set; }
-
     private bool _hasHit;
     public override void OnStart()
     {
@@ -11,23 +10,31 @@ public sealed class RocketController : Controller, IUpdatable, ISpawned
         _unit.OnHealthIsZero += _unit.Die;
         Registerer.RegisterUpdatable(this);
     }
-    public void OnUpdate(float dt)
+    public void OnUpdate(float dt) 
     {
-        _unit.OnUpdate(dt);
-
         if (this == null) return;
-        _unit.UnitSO.SimComponents.Movers.Mover.Move(_unit, transform.forward, dt);
 
+        Vector3 moveDir = transform.forward;
+
+        _unit.State.MoveState.ExternalForcesVelocity.y += _unit.Stats.GetStats(_unit.UnitSO.SimComponents.Movers.Mover).Gravity * dt;
+
+        _unit.UnitSO.SimComponents.Movers.Mover.Move(_unit, moveDir ,dt);
     }
-    private void OnTriggerEnter(Collider other)
+    public void Hit(Unit hitUnit)
     {
-        if (other.CompareTag("Environment"))
+        abilitySO.OnHit(_unit.Stats, new PositionArgs(transform.position, transform.rotation, transform.forward), _unit, hitUnit);
+        _hasHit = true;
+    }
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.CompareTag("Environment"))
         {
             Hit(null);
             _unit.Die();
             return;
         }
-        if (other.TryGetComponent(out Unit u))
+
+        if (collision.gameObject.TryGetComponent(out Unit u))
         {
             if (_unit.UnitSO.SimComponents.Sensor.IsDetectionViable(_unit.Stats, u, _unit) == false) return;
 
@@ -35,11 +42,7 @@ public sealed class RocketController : Controller, IUpdatable, ISpawned
             _unit.Die();
         }
     }
-    public void Hit(Unit hitUnit)
-    {
-        abilitySO.OnHit(_unit.Stats, new PositionArgs(transform.position, transform.rotation, transform.forward), _unit, hitUnit);
-        _hasHit = true;
-    }
+
     public override void OnDeath()
     {
         _unit.OnHealthIsZero -= _unit.Die;

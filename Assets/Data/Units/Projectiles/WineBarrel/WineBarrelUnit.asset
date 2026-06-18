@@ -10,22 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
-  m_Name: Enemy Default
+  m_Name: WineBarrelUnit
   m_EditorClassIdentifier: Assembly-CSharp::UnitSO
-  StatsTemplate: {fileID: 11400000, guid: 21835b16ed884144388176af1fa6085f, type: 2}
+  StatsTemplate: {fileID: 11400000, guid: f17a032c43379774a91aff036e4ac3f3, type: 2}
   SimComponents:
-    Sensor: {fileID: 0}
+    Sensor: {fileID: 11400000, guid: 68e7416cfb1b7ff42ad3fdcdfcf2e52e, type: 2}
     Raycaster: {fileID: 0}
     AreaSearcher: {fileID: 0}
     Movers:
-      Mover: {fileID: 11400000, guid: f4f4bd0bfab2d864eab92cb057f172d3, type: 2}
-      RotationalMover: {fileID: 11400000, guid: a5cc0f5ae6f60f145881b46d6c57e384, type: 2}
-    Abilities:
-    - {fileID: 11400000, guid: f7a7c0801d0f64c4da488cb18e15ce1d, type: 2}
+      Mover: {fileID: 11400000, guid: c3cfbf8a8488f5d4db67e7079a542636, type: 2}
+      RotationalMover: {fileID: 0}
+    Abilities: []
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
     Emitter: {fileID: 0}
-  Tags: 2
+  Tags: 3
   Team: 2

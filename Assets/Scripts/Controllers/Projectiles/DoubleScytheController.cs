@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DoubleScytheController : Controller, IUpdatable, IAbilityConfigCarrier
+public class DoubleScytheController : Controller, IUpdatable, ISpawned
 {
     public AbilitySO abilitySO { get; set; }
 
