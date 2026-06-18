@@ -6,6 +6,7 @@ public sealed class EnemyController : Controller, IUpdatable
 {
     public Transform FirePoint;
     [SerializeField] private bool _useWeapon;
+    [SerializeField] private GameObject healingOrbPrefab;
 
     private EnemyPathfinding _pf;
     private Animator _anim;
@@ -47,6 +48,9 @@ public sealed class EnemyController : Controller, IUpdatable
         _unit.OnHealthIsZero -= Death;
         Registerer.UnregisterUpdatable(this);
         WaveSpawner.instance.EnemyDied(gameObject);
+
+        if (healingOrbPrefab != null)
+            Instantiate(healingOrbPrefab, transform.position, Quaternion.identity);
 
         Destroy(gameObject);
     }
