@@ -7470,7 +7470,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   heldItems: []
   itemsDisplayed: []
-  Abilities: []
 --- !u!1001 &915019311
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10350,7 +10349,7 @@ PrefabInstance:
     - target: {fileID: -1439730007547781893, guid: db48bdebd45eb6e47a767f7765ba13d9, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 8759494b45a9bff40936a03b7c8710e5, type: 2}
+      objectReference: {fileID: 2100000, guid: a4e5ae1677508914c879f085af128791, type: 2}
     - target: {fileID: 919132149155446097, guid: db48bdebd45eb6e47a767f7765ba13d9, type: 3}
       propertyPath: m_Name
       value: coleseumNEW

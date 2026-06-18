@@ -12,6 +12,8 @@ public class DInoController : Controller, IUpdatable
     {
         Registerer.RegisterUpdatable(this);
         _unit.ChangeAbility(0);
+
+        _unit.OnHealthIsZero += OnDeath;
     }
 
     public void OnUpdate(float dt)
@@ -20,6 +22,7 @@ public class DInoController : Controller, IUpdatable
         _unit.State.CurrentAbility.ReloadProgress(dt);
 
         HandleWeapon();
+        UpdateAnimation();
     }
     private void HandleWeapon()
     {
@@ -33,5 +36,17 @@ public class DInoController : Controller, IUpdatable
             _unit.State.CurrentAbility.Fire(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), _unit);
             _unit.State.CurrentAbility.ResetReloadProgress();
         }
+    }
+    public override void OnDeath()
+    {
+        _unit.OnHealthIsZero -= OnDeath;
+        Registerer.UnregisterUpdatable(this);
+        WaveSpawner.instance.EnemyDied(gameObject);
+
+        //trigger smth
+    }
+    private void UpdateAnimation()
+    {
+        _anim.SetFloat("Speed", _unit.State.MoveState.CurrentSpeed);
     }
 }
