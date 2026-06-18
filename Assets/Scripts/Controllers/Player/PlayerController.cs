@@ -19,6 +19,7 @@ public sealed class PlayerController : Controller, IUpdatable
         Registerer.RegisterUpdatable(this);
         _moveStats = _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover);
         _unit.ChangeAbility(0);
+        GameManager.instance.player = gameObject;
 
         //StartCoroutine(BuffTest());
     }
