@@ -8876,16 +8876,6 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: staff
-    spriteName: staff
-    isGroup: 0
-    parentIndex: -1
-    spriteID: fca50666d93f47148aa07912d425ef0b
-    layerID: 69
-    mosaicPosition: {x: 1191, y: 4}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: left leg
     spriteName: 
     isGroup: 1
@@ -8899,7 +8889,7 @@ ScriptedImporter:
   - name: left lower leg
     spriteName: left lower leg
     isGroup: 0
-    parentIndex: 14
+    parentIndex: 13
     spriteID: 52c40a970756c454eb286e4e5e3db1c3
     layerID: 21
     mosaicPosition: {x: 1474, y: 411}
@@ -8909,7 +8899,7 @@ ScriptedImporter:
   - name: left upper leg
     spriteName: left upper leg
     isGroup: 0
-    parentIndex: 14
+    parentIndex: 13
     spriteID: 692a8c0cc05ccd449a57759a8b0f1dce
     layerID: 20
     mosaicPosition: {x: 381, y: 1046}
@@ -8919,7 +8909,7 @@ ScriptedImporter:
   - name: left foot
     spriteName: left foot
     isGroup: 0
-    parentIndex: 14
+    parentIndex: 13
     spriteID: f56f1934740d572408612585108f0791
     layerID: 22
     mosaicPosition: {x: 4, y: 1694}
@@ -8939,7 +8929,7 @@ ScriptedImporter:
   - name: right lower leg
     spriteName: right lower leg
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 17
     spriteID: 2ab2f7eb4d7be7e4ea70b8ef334fe465
     layerID: 17
     mosaicPosition: {x: 1474, y: 999}
@@ -8949,7 +8939,7 @@ ScriptedImporter:
   - name: right upper leg
     spriteName: right upper leg
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 17
     spriteID: ae250449218cfa24b9e4eb2f394e4a5d
     layerID: 16
     mosaicPosition: {x: 1702, y: 411}
@@ -8959,7 +8949,7 @@ ScriptedImporter:
   - name: right foot
     spriteName: right foot
     isGroup: 0
-    parentIndex: 18
+    parentIndex: 17
     spriteID: 0f8b54d8f61bc2140932f1334c7351f9
     layerID: 19
     mosaicPosition: {x: 381, y: 1679}
@@ -8993,6 +8983,16 @@ ScriptedImporter:
     spriteID: 3d3b1083e6864254f8abe078594f2926
     layerID: 8
     mosaicPosition: {x: 651, y: 1650}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: staff
+    spriteName: staff
+    isGroup: 0
+    parentIndex: -1
+    spriteID: fca50666d93f47148aa07912d425ef0b
+    layerID: 69
+    mosaicPosition: {x: 1191, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
