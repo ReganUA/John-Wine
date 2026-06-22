@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb2509507caba00408f884e43160bede, type: 3}
   m_Name: DefaultPathDefault
   m_EditorClassIdentifier: Assembly-CSharp::PathfindingStats
-  maxDistanceSearch: 50
+  maxDistanceSearch: 1000
   minDistanceFlank: 4
   maxDistanceFlank: 10
   stoppingDistance: 3
