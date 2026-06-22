@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: PlayerStatsTemplate
   m_EditorClassIdentifier: Assembly-CSharp::StatsTemplate
   Health:
-    MaxHealth: 300
-    HealthOnStart: 300
+    MaxHealth: 100
+    HealthOnStart: 100
     Armor: 0
     Regeneration: 0
     RegenerationDelay: 0

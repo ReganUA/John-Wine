@@ -10,27 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5909d6c7051297147bd4bef3672e183f, type: 3}
-  m_Name: RocketWeapon
-  m_EditorClassIdentifier: Assembly-CSharp::DefaultWeapon
+  m_Name: ScytheAthena
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnAbility
   <Stats>k__BackingField:
-    ReloadSpeed: 3
+    ReloadSpeed: 2
   LaunchComponents:
     Sensor: {fileID: 0}
-    Raycaster: {fileID: 11400000, guid: 74f7da0b6a378274183c08485fcc0211, type: 2}
-    AreaSearcher: {fileID: 0}
-    Movers:
-      Mover: {fileID: 0}
-      RotationalMover: {fileID: 0}
-    Abilities: []
-    UnitSpawner: {fileID: 11400000, guid: cbc1fdc40e983a149820bd0d5d208c0d, type: 2}
-    Effect: {fileID: 0}
-    TemporaryBehaviour: {fileID: 0}
-    PeriodicBehaviour: {fileID: 0}
-    Emitter: {fileID: 11400000, guid: c46bbf2f2b26314488804328285c17c4, type: 2}
-  ImpactComponents:
-    Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
-    AreaSearcher: {fileID: 11400000, guid: 7a1a504a1d23cf441bc1f8126ada3ecb, type: 2}
+    AreaSearcher: {fileID: 11400000, guid: 2bdf02487e869d947b7129b9c8382298, type: 2}
     Movers:
       Mover: {fileID: 0}
       RotationalMover: {fileID: 0}
@@ -39,4 +26,17 @@ MonoBehaviour:
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
-    Emitter: {fileID: 11400000, guid: 153b36aa2f16d1e4d8d24dc59ce8a193, type: 2}
+    Emitter: {fileID: 0}
+  ImpactComponents:
+    Sensor: {fileID: 0}
+    Raycaster: {fileID: 0}
+    AreaSearcher: {fileID: 0}
+    Movers:
+      Mover: {fileID: 0}
+      RotationalMover: {fileID: 0}
+    Abilities: []
+    UnitSpawner: {fileID: 0}
+    Effect: {fileID: 0}
+    TemporaryBehaviour: {fileID: 0}
+    PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 0}

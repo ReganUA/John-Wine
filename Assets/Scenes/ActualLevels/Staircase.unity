@@ -6090,7 +6090,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1297386339}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee4c395773a132b4e89f21cffa7152db, type: 3}
+  m_Script: {fileID: 11500000, guid: b59aaddf465a07941961a1b9533c0038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InventoryContainer
 --- !u!1 &1326574098

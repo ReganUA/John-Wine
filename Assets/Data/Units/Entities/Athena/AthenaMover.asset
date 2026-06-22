@@ -9,8 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e46bf532046347d46b4e45533ad442a3, type: 3}
-  m_Name: RocketSplashDamage
-  m_EditorClassIdentifier: Assembly-CSharp::DealDamageEffect
+  m_Script: {fileID: 11500000, guid: 81e9d25613f45594eabac995dd803d70, type: 3}
+  m_Name: AthenaMover
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultMover
   <Stats>k__BackingField:
-    Amount: 20
+    MaxSpeed: 2
+    Acceleration: 10
+    Deceleration: 10
+    AirDeceleration: 0
+    Gravity: -18
+    JumpForce: 0

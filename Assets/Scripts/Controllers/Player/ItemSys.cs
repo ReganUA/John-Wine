@@ -16,8 +16,11 @@ public class ItemSys : Controller, IUpdatable
     }
     void Start()
     {
-        itemDisplay = InventoryManager.instance.gameObject.transform;
-
+        if (InventoryCointainer.instance != null)
+        {
+            itemDisplay = InventoryCointainer.instance.gameObject.transform;
+        }
+        
         if (InventoryManager.instance.itemsDisplayed.Count > 0)
         {
             if (itemDisplay.childCount == 0)
