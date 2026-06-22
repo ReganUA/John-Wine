@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1081175053539931914
+--- !u!1001 &3359519569152381160
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9,16 +9,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4177872
+      value: 41.78542
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5554547
+      value: 10.887
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -48.86389
+      value: -26.576408
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -48,9 +52,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f7ab62ff5e77fc0449a67448b9cda070, type: 2}
     - target: {fileID: 919132149155446097, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
       propertyPath: m_Name
-      value: stairs_low
+      value: stairs_low 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
       propertyPath: m_TagString
@@ -62,20 +70,20 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2678897792977560170}
+      addedObject: {fileID: 1058629446592397129}
   m_SourcePrefab: {fileID: 100100000, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
---- !u!1 &270342603920099931 stripped
+--- !u!1 &2476417868430847417 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a7f29e27be2f5d0438584afd8b21b54f, type: 3}
-  m_PrefabInstance: {fileID: 1081175053539931914}
+  m_PrefabInstance: {fileID: 3359519569152381160}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &2678897792977560170
+--- !u!64 &1058629446592397129
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270342603920099931}
+  m_GameObject: {fileID: 2476417868430847417}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
