@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
-  m_Name: Dinosys
+  m_Name: Dyonisus
   m_EditorClassIdentifier: Assembly-CSharp::UnitSO
   StatsTemplate: {fileID: 11400000, guid: 9b81399d237646b4bbb926a7497e4a86, type: 2}
   SimComponents:
@@ -21,9 +21,11 @@ MonoBehaviour:
       Mover: {fileID: 11400000, guid: 4c51e409fb3eea94b86af7e6978cb511, type: 2}
       RotationalMover: {fileID: 11400000, guid: a5cc0f5ae6f60f145881b46d6c57e384, type: 2}
     Abilities:
-    - {fileID: 11400000, guid: 914f291329183a64f9452f968b430af1, type: 2}
+    - {fileID: 11400000, guid: ee3bb7d3a3ba0c04f9175dfaeaca4bb3, type: 2}
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 0}
   Tags: 2
+  Team: 2

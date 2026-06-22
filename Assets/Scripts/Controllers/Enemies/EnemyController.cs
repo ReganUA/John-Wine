@@ -18,7 +18,7 @@ public sealed class EnemyController : Controller, IUpdatable
     }
     public override void OnStart()
     {
-        _unit.OnHealthIsZero += Death;
+        _unit.OnHealthIsZero += OnDeath;
         Registerer.RegisterUpdatable(this);
         _unit.ChangeAbility(0);
     }
@@ -43,9 +43,9 @@ public sealed class EnemyController : Controller, IUpdatable
             _unit.State.CurrentAbility.ResetReloadProgress();
         }
     }
-    public void Death()
+    public override void OnDeath()
     {
-        _unit.OnHealthIsZero -= Death;
+        _unit.OnHealthIsZero -= OnDeath;
         Registerer.UnregisterUpdatable(this);
         WaveSpawner.instance.EnemyDied(gameObject);
 
