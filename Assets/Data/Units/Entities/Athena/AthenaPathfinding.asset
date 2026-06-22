@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AthenaPathfinding
   m_EditorClassIdentifier: Assembly-CSharp::PathfindingStats
   maxDistanceSearch: 10000
-  minDistanceFlank: 1
-  maxDistanceFlank: 5
-  stoppingDistance: 2
+  minDistanceFlank: 10
+  maxDistanceFlank: 20
+  stoppingDistance: 4
   tokenPriority: 0

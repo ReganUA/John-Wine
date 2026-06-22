@@ -45,7 +45,6 @@ public class EnemyPathfinding : MonoBehaviour, IUpdatable
             unit.Stats.GetStatsModifiable(unit.UnitSO.SimComponents.Movers.Mover).BuffAdd(new MovementStats() {MaxSpeed = -maxSpeed });
         }
     }
-
     public void OnUpdate(float deltaTime)
     {
         if (playerTarget == null) return;

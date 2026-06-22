@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public sealed class PlayerController : Controller, IUpdatable
@@ -25,6 +26,8 @@ public sealed class PlayerController : Controller, IUpdatable
         _moveStats = _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover);
         _unit.ChangeAbility(0);
         GameManager.instance.player = gameObject;
+        damageEffect = DamageEffecto.instance.GetComponent<Image>();
+        damageEffect.gameObject.SetActive(false);
 
         //StartCoroutine(BuffTest());
     }
@@ -122,8 +125,9 @@ public sealed class PlayerController : Controller, IUpdatable
 
         return Vector3.ClampMagnitude(forward * input.z + right * input.x, 1f);
     }
-    private void DamageEffect()
+    public void DamageEffect()
     {
+        Debug.Log("receieved damage");
         damageEffect.gameObject.SetActive(true);
         StartCoroutine(DamageEffectRoutine(damageEffectTime));
     }
@@ -139,6 +143,8 @@ public sealed class PlayerController : Controller, IUpdatable
         Camera.Die();
 
         Registerer.UnregisterUpdatable(this);
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {

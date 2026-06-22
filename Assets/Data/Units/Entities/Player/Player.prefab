@@ -250,6 +250,8 @@ MonoBehaviour:
   PushPower: 2
   CoyoteTime: 0.3
   JumpBufferTime: 0.3
+  damageEffect: {fileID: 0}
+  damageEffectTime: 0.05
 --- !u!143 &4557738316592814038
 CharacterController:
   m_ObjectHideFlags: 0
