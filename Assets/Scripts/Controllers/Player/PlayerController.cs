@@ -15,6 +15,8 @@ public sealed class PlayerController : Controller, IUpdatable
     private float _jumpBufferTime;
     private ModifiableStats<MovementStats> _moveStats;
 
+    private Animator _anim;
+
     [SerializeField] private Image damageEffect;
     [SerializeField] private float damageEffectTime;
     private void Start() => _unit.OnSpawn();
@@ -26,6 +28,7 @@ public sealed class PlayerController : Controller, IUpdatable
         _moveStats = _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover);
         _unit.ChangeAbility(0);
         GameManager.instance.player = gameObject;
+        _anim = GetComponentInChildren<Animator>();
 
         if (DamageEffecto.instance != null)
         {
@@ -102,6 +105,7 @@ public sealed class PlayerController : Controller, IUpdatable
 
             if (_unit.State.CurrentAbility.CanShoot == false || _unit.State.CurrentAbility.IsBlocked) return;
 
+            UpdateAnimation();
             _unit.State.CurrentAbility.Fire(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), _unit);
             _unit.State.CurrentAbility.ResetReloadProgress();
         }
@@ -168,5 +172,10 @@ public sealed class PlayerController : Controller, IUpdatable
 
         damageEffect = DamageEffecto.instance.GetComponent<Image>();
         damageEffect.gameObject.SetActive(false);
+    }
+    private void UpdateAnimation()
+    {
+        _anim.SetTrigger("Attack");
+        _anim.ResetTrigger("Attacl");
     }
 }

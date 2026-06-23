@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -19,18 +20,27 @@ public class ItemSys : Controller, IUpdatable
         if (InventoryCointainer.instance != null)
         {
             itemDisplay = InventoryCointainer.instance.gameObject.transform;
+        } else
+        {
+            StartCoroutine(LoadInterfaceLater());
         }
         
-        if (InventoryManager.instance.itemsDisplayed.Count > 0)
+        if (InventoryManager.instance != null)
         {
-            if (itemDisplay.childCount == 0)
+            if (InventoryManager.instance.itemsDisplayed.Count > 0)
             {
-                foreach (GameObject item in InventoryManager.instance.itemsDisplayed)
+                if (itemDisplay.childCount == 0)
                 {
-                    Instantiate(imagePrefab, itemDisplay);
+                    foreach (GameObject item in InventoryManager.instance.itemsDisplayed)
+                    {
+                        Instantiate(imagePrefab, itemDisplay);
+                    }
                 }
             }
-        } 
+        } else
+        {
+            StartCoroutine(LoadInterfaceLater2());
+        }
     }
     public bool GetKey(InteractiveBaseEnviroment target)
     {
@@ -61,5 +71,25 @@ public class ItemSys : Controller, IUpdatable
     {
         GameObject ui = Instantiate(imagePrefab, itemDisplay);
         InventoryManager.instance.itemsDisplayed.Add(ui);
+    }
+    private IEnumerator LoadInterfaceLater()
+    {
+        yield return new WaitForEndOfFrame();
+        itemDisplay = InventoryCointainer.instance.gameObject.transform;
+    }
+    private IEnumerator LoadInterfaceLater2()
+    {
+        yield return new WaitForEndOfFrame();
+
+        if (InventoryManager.instance.itemsDisplayed.Count > 0)
+        {
+            if (itemDisplay.childCount == 0)
+            {
+                foreach (GameObject item in InventoryManager.instance.itemsDisplayed)
+                {
+                    Instantiate(imagePrefab, itemDisplay);
+                }
+            }
+        }
     }
 }
