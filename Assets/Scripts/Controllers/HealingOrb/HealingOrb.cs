@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class HealingOrb : Controller, IUpdatable
 {
+    GameObject playerTarget; 
     void Start()
     {
         _unit = GetComponent<Unit>();
@@ -9,8 +10,14 @@ public class HealingOrb : Controller, IUpdatable
         Registerer.RegisterUpdatable(this);
         _unit.OnSpawn(null);
     }
-    public override void OnStart() { }
-    public void OnUpdate(float deltaTime) { }
+    public override void OnStart()
+    {
+        playerTarget = GameManager.instance.player;
+    }
+    public void OnUpdate(float deltaTime)
+    {
+       _unit.UnitSO.SimComponents.Movers.RotationalMover.Move(_unit, playerTarget.transform.position, deltaTime);
+    }
     void OnTriggerEnter(Collider collision)
     {
         if (collision.CompareTag("Player"))

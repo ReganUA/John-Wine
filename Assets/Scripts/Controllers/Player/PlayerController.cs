@@ -26,8 +26,15 @@ public sealed class PlayerController : Controller, IUpdatable
         _moveStats = _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover);
         _unit.ChangeAbility(0);
         GameManager.instance.player = gameObject;
-        damageEffect = DamageEffecto.instance.GetComponent<Image>();
-        damageEffect.gameObject.SetActive(false);
+
+        if (DamageEffecto.instance != null)
+        {
+            damageEffect = DamageEffecto.instance.GetComponent<Image>();
+            damageEffect.gameObject.SetActive(false);
+        } else
+        {
+            StartCoroutine(LaterLoad());
+        }
 
         //StartCoroutine(BuffTest());
     }
@@ -154,5 +161,12 @@ public sealed class PlayerController : Controller, IUpdatable
 
         Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
         body.linearVelocity = pushDir * PushPower;
+    }
+    private IEnumerator LaterLoad()
+    {
+        yield return new WaitForEndOfFrame();
+
+        damageEffect = DamageEffecto.instance.GetComponent<Image>();
+        damageEffect.gameObject.SetActive(false);
     }
 }

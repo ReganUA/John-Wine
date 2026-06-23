@@ -251,7 +251,7 @@ MonoBehaviour:
   CoyoteTime: 0.3
   JumpBufferTime: 0.3
   damageEffect: {fileID: 0}
-  damageEffectTime: 0.05
+  damageEffectTime: 0.1
 --- !u!143 &4557738316592814038
 CharacterController:
   m_ObjectHideFlags: 0
@@ -272,8 +272,8 @@ CharacterController:
   serializedVersion: 3
   m_Height: 2
   m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.2
+  m_SlopeLimit: 60
+  m_StepOffset: 1
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
