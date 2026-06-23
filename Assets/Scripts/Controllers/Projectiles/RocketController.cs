@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public sealed class RocketController : Controller, IUpdatable, IAbilityConfigCarrier
+public sealed class RocketController : Controller, IUpdatable, ISpawned
 {
     public AbilitySO abilitySO { get; set; }
+
+    private bool _hasHit;
     public override void OnStart()
     {
         _unit.Stats.SetComponentsStats(abilitySO.ImpactComponents);
@@ -21,7 +23,7 @@ public sealed class RocketController : Controller, IUpdatable, IAbilityConfigCar
     {
         if (other.CompareTag("Environment"))
         {
-            OnHit(null);
+            Hit(null);
             _unit.Die();
             return;
         }
@@ -29,17 +31,22 @@ public sealed class RocketController : Controller, IUpdatable, IAbilityConfigCar
         {
             if (_unit.UnitSO.SimComponents.Sensor.IsDetectionViable(_unit.Stats, u, _unit) == false) return;
 
-            OnHit(u);
+            Hit(u);
             _unit.Die();
         }
     }
-    public void OnHit(Unit hitUnit)
+    public void Hit(Unit hitUnit)
     {
         abilitySO.OnHit(_unit.Stats, new PositionArgs(transform.position, transform.rotation, transform.forward), _unit, hitUnit);
+        _hasHit = true;
     }
     public override void OnDeath()
     {
-        OnHit(null);
+        _unit.OnHealthIsZero -= _unit.Die;
+        if (_hasHit == false)
+        {
+            Hit(null);
+        }
         Registerer.UnregisterUpdatable(this);
     }
 }

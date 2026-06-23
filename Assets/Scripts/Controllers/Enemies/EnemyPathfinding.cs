@@ -25,7 +25,7 @@ public class EnemyPathfinding : MonoBehaviour, IUpdatable
     [SerializeField] private bool ignoreFlank;
     void Start()
     {
-        playerTarget = GameManager.instance.player.transform;
+        playerTarget = GameManager.instance.player.gameObject.transform;
         unit = GetComponent<Unit>();
         Registerer.RegisterUpdatable(this);
         _agent = GetComponent<NavMeshAgent>();

@@ -8,6 +8,7 @@ public sealed class UnitSpawner : Spawner<Unit>
     {
         Vector3 spawnPos = args.position + (args.rotation * PositionOffset);
         Unit spawned = Instantiate(_prefab, spawnPos, args.rotation);
+        spawned.Owner = owner;
         return spawned;
     }
 }

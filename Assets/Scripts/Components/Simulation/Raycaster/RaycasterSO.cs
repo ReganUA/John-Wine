@@ -11,4 +11,5 @@ public struct RaycastStats
 {
     public float Range;
     public LayerMask Layer;
+    public EmitterSO Emitter;
 }

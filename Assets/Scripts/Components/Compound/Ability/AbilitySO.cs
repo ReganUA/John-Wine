@@ -18,6 +18,7 @@ public class Ability
 {
     public bool CanShoot;
     public bool IsBlocked;
+    public bool IsShooting;
     public List<Unit> Spawned = new();
 
 
@@ -31,11 +32,10 @@ public class Ability
     public virtual void Fire(PositionArgs raycastPos, PositionArgs firePointPos, Unit whoFired)
     {
         Unit spawned = config.Fire(RuntimeStats, raycastPos, firePointPos, whoFired);
-
         Spawned.Add(spawned);
     }
-    public virtual void Hold(PositionArgs raycastPos, PositionArgs firePointPos, float dt) { }
-    public virtual void Release() { }
+    public virtual void Hold(PositionArgs raycastPos, PositionArgs firePointPos, float dt) { IsShooting = true; }
+    public virtual void Release() { IsShooting = false; }
     public void ReloadProgress(float dt)
     {
         if (_reloadProgress < 1.0f)
@@ -58,6 +58,10 @@ public class Ability
     {
         config = so;
         RuntimeStats = statsCarrier;
+
+        statsCarrier.AddStats(config);
+        statsCarrier.SetComponentsStats(config.LaunchComponents);
+        statsCarrier.SetComponentsStats(config.ImpactComponents);
 
         _stats = statsCarrier.GetStatsModifiable(config);
     }
