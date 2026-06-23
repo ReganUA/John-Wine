@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WineBarrelMover
   m_EditorClassIdentifier: Assembly-CSharp::DefaultMover
   <Stats>k__BackingField:
-    MaxSpeed: 20
+    MaxSpeed: 50
     Acceleration: 99999
-    Deceleration: 99999
+    Deceleration: 0
     AirDeceleration: 0
-    Gravity: -0.5
+    Gravity: 0
     JumpForce: 0

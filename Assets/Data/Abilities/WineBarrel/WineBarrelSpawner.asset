@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2192fb16086108244b9113d3e1f27ffa, type: 3}
   m_Name: WineBarrelSpawner
   m_EditorClassIdentifier: Assembly-CSharp::UnitSpawner
-  _prefab: {fileID: 2177823884917379813, guid: e98d5265dfbb2d843a73d927f621e579, type: 3}
+  <_prefab>k__BackingField: {fileID: 2177823884917379813, guid: e98d5265dfbb2d843a73d927f621e579, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}

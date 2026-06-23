@@ -6,6 +6,7 @@ public class DefaultMover : MoverSO
     public override void Move(Unit unit, Vector3 dir, float dt)
     {
         MovementStats m = unit.Stats.GetStats(this);
+
         bool moving = dir.sqrMagnitude > 0.001f;
         UpdateSpeed(m, unit.State.MoveState, moving, dt);
 

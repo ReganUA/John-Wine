@@ -5877,7 +5877,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
   heldItems: []
   itemsDisplayed: []
-  Abilities: []
 --- !u!1001 &747754797
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9574,7 +9573,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  keyToTrigger: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  keyToTrigger: 3
 --- !u!4 &1117599425
 Transform:
   m_ObjectHideFlags: 0
@@ -20141,6 +20152,7 @@ SceneRoots:
   - {fileID: 1747079904}
   - {fileID: 286478422}
   - {fileID: 1408869520}
+  - {fileID: 1117599425}
   - {fileID: 172394549}
   - {fileID: 726987484}
   - {fileID: 969918624}
@@ -20155,7 +20167,6 @@ SceneRoots:
   - {fileID: 50043008}
   - {fileID: 191860382}
   - {fileID: 1829507278}
-  - {fileID: 1117599425}
   - {fileID: 1435756984}
   - {fileID: 1888175235}
   - {fileID: 1666145084}

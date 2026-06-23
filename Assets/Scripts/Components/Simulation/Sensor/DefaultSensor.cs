@@ -6,20 +6,21 @@ public sealed class DefaultSensor : SensorSO
     internal override bool IsDetectionViable(ComponentRuntimeStats statsCarrier, Unit hitUnit, Unit sourceUnit)
     {
         if (hitUnit == null) return false;
+        if (sourceUnit == hitUnit) return false;
+
         SensorStats s = statsCarrier.GetStats(this);
-        if (s.DetectOwner == false)
+
+        if (s.DetectOwner == false && sourceUnit != null)
         {
-            TeamsFilter relation = CompositionManager.Instance.GetRelation(sourceUnit.UnitSO.Team, hitUnit.UnitSO.Team);
-
-            if ((s.TeamsFilter & relation) == 0) return false;
-
-            if (sourceUnit != null && sourceUnit.Owner != null)
-            {
-                if (sourceUnit.Owner == hitUnit) return false;
-            }
-            if (sourceUnit == hitUnit) return false;
+            if (sourceUnit.Owner == hitUnit) return false;
         }
         if ((hitUnit.UnitSO.Tags & s.TagFilter) == 0) return false;
+
+        if (sourceUnit != null)
+        {
+            TeamsFilter relation = CompositionManager.Instance.GetRelation(sourceUnit.UnitSO.Team, hitUnit.UnitSO.Team);
+            if ((s.TeamsFilter & relation) == 0) return false;
+        }
 
         return true;
     }

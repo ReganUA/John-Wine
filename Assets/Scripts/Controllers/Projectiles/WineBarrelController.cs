@@ -16,8 +16,6 @@ public sealed class WineBarrelController : Controller, IUpdatable, ISpawned
 
         Vector3 moveDir = transform.forward;
 
-        _unit.State.MoveState.ExternalForcesVelocity.y += _unit.Stats.GetStats(_unit.UnitSO.SimComponents.Movers.Mover).Gravity * dt;
-
         _unit.UnitSO.SimComponents.Movers.Mover.Move(_unit, moveDir ,dt);
     }
     public void Hit(Unit hitUnit)

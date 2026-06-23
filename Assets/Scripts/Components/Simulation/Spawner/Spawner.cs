@@ -3,7 +3,7 @@ using UnityEngine;
 
 public abstract class Spawner<T> : ScriptableObject
 {
-    [SerializeField] protected T _prefab;
+    [field: SerializeField] public T _prefab { get; private set; }
     [SerializeField] protected Vector3 PositionOffset;
     public abstract T Spawn(PositionArgs args, T owner = default);
 }
