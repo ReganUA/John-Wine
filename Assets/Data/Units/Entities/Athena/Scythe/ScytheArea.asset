@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ScytheArea
   m_EditorClassIdentifier: Assembly-CSharp::DefaultAreaSearch
   <Stats>k__BackingField:
-    Size: {x: 3, y: 3, z: 3}
+    Size: {x: 6, y: 6, z: 6}
     Angle: 161
     MaximumTargetCount: 50
     Components:

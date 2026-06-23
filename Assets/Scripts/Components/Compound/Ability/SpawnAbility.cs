@@ -19,7 +19,6 @@ public class SpawnAbility : AbilitySO
 
         if (LaunchComponents.AreaSearcher != null)
             LaunchComponents.AreaSearcher.Search(statsCarrier, raycastPos, sourceUnit);
-
         if (LaunchComponents.Raycaster != null)
         {
             RaycastHit _hit = LaunchComponents.Raycaster.Raycast(statsCarrier, raycastPos.position, raycastPos.direction);

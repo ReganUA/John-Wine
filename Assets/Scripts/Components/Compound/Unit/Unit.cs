@@ -57,6 +57,7 @@ public class Unit : MonoBehaviour
     }
     public void TakeDamage(float amount)
     {
+        Debug.Log("hit registered");
         float finalAmount = amount - Health.Value.Armor;
         if (finalAmount < 0)
         {
