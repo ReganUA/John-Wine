@@ -7039,16 +7039,6 @@ ScriptedImporter:
     flatten: 0
     isImported: 1
     isVisible: 1
-  - name: spear
-    spriteName: spear
-    isGroup: 0
-    parentIndex: -1
-    spriteID: f073bdb2411ceb94a8f193fac6e8d548
-    layerID: 142
-    mosaicPosition: {x: 217, y: 715}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
   - name: left arm
     spriteName: 
     isGroup: 1
@@ -7062,7 +7052,7 @@ ScriptedImporter:
   - name: left upper arm
     spriteName: left upper arm
     isGroup: 0
-    parentIndex: 2
+    parentIndex: 1
     spriteID: b9044de8daeae38488eba9558a1817e0
     layerID: 140
     mosaicPosition: {x: 294, y: 1414}
@@ -7072,7 +7062,7 @@ ScriptedImporter:
   - name: left lower arm
     spriteName: left lower arm
     isGroup: 0
-    parentIndex: 2
+    parentIndex: 1
     spriteID: 001085e1e849b474c9edeaf7d9c444a9
     layerID: 139
     mosaicPosition: {x: 294, y: 1609}
@@ -7082,10 +7072,20 @@ ScriptedImporter:
   - name: left hand
     spriteName: left hand
     isGroup: 0
-    parentIndex: 2
+    parentIndex: 1
     spriteID: 51d0ffb0905e1254cb83e7058f4bb009
     layerID: 138
     mosaicPosition: {x: 4, y: 1928}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: spear
+    spriteName: spear
+    isGroup: 0
+    parentIndex: -1
+    spriteID: f073bdb2411ceb94a8f193fac6e8d548
+    layerID: 142
+    mosaicPosition: {x: 217, y: 715}
     flatten: 0
     isImported: 1
     isVisible: 1

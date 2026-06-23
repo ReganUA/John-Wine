@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
+  m_Name: AthenaUnit
+  m_EditorClassIdentifier: Assembly-CSharp::UnitSO
+  StatsTemplate: {fileID: 11400000, guid: af58ddcb58bc15147b966c5a313ea808, type: 2}
+  SimComponents:
+    Sensor: {fileID: 0}
+    Raycaster: {fileID: 0}
+    AreaSearcher: {fileID: 0}
+    Movers:
+      Mover: {fileID: 11400000, guid: a1a30fa309282164c8436a926ec619fe, type: 2}
+      RotationalMover: {fileID: 11400000, guid: 71bdcf62063cc9149a23b540c0698647, type: 2}
+    Abilities:
+    - {fileID: 11400000, guid: d54e9cd4f5924d641a11232e248add6e, type: 2}
+    UnitSpawner: {fileID: 0}
+    Effect: {fileID: 0}
+    TemporaryBehaviour: {fileID: 0}
+    PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 0}
+  Tags: 0
+  Team: 0

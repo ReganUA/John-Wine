@@ -137,6 +137,15 @@ public class InteractiveBaseEnviroment : MonoBehaviour
     {
         gameObject.SetActive(true);
     }
+    public void ChangeMaterial(Material material)
+    {
+        Renderer[] renderers = GetComponentsInChildren<Renderer>(true);
+
+        foreach (Renderer rend in renderers)
+        {
+            rend.sharedMaterial = material;
+        }
+    }
     public void Destroy()
     {
         Destroy(gameObject);

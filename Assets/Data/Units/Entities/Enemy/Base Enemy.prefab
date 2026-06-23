@@ -211,6 +211,7 @@ MonoBehaviour:
     RB: {fileID: 0}
     CC: {fileID: 0}
   Owner: {fileID: 0}
+  Abilities: []
 --- !u!114 &6260847258584973979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,6 +228,8 @@ MonoBehaviour:
   playerTarget: {fileID: 0}
   _token: 0
   _stats: {fileID: 11400000, guid: bfd88dc34ee28e84a81a1f5b38e37404, type: 2}
+  isNotMoving: 0
+  ignoreFlank: 0
 --- !u!114 &8396287341076616771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -242,6 +245,7 @@ MonoBehaviour:
   _unit: {fileID: 1759939131112494190}
   FirePoint: {fileID: 6319302436688645158}
   _useWeapon: 0
+  healingOrbPrefab: {fileID: 3042106670357236283, guid: a8f0ca7e24cb1b3479104f7a440ade72, type: 3}
 --- !u!195 &3288653584562655607
 NavMeshAgent:
   m_ObjectHideFlags: 0

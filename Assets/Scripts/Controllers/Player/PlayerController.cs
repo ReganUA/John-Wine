@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public sealed class PlayerController : Controller, IUpdatable
 {
@@ -12,10 +13,14 @@ public sealed class PlayerController : Controller, IUpdatable
     private float _coyoteTime;
     private float _jumpBufferTime;
     private ModifiableStats<MovementStats> _moveStats;
+
+    [SerializeField] private Image damageEffect;
+    [SerializeField] private float damageEffectTime;
     private void Start() => _unit.OnSpawn();
     public override void OnStart()
     {
         _unit.OnHealthIsZero += _unit.Die;
+        _unit.OnTakeDamageEvent += DamageEffect;
         Registerer.RegisterUpdatable(this);
         _moveStats = _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover);
         _unit.ChangeAbility(0);
@@ -117,10 +122,20 @@ public sealed class PlayerController : Controller, IUpdatable
 
         return Vector3.ClampMagnitude(forward * input.z + right * input.x, 1f);
     }
-
+    private void DamageEffect()
+    {
+        damageEffect.gameObject.SetActive(true);
+        StartCoroutine(DamageEffectRoutine(damageEffectTime));
+    }
+    private IEnumerator DamageEffectRoutine(float s)
+    {
+        yield return new WaitForSeconds(s);
+        damageEffect.gameObject.SetActive(false);
+    }
     public override void OnDeath()
     {
         _unit.OnHealthIsZero -= _unit.Die;
+        _unit.OnTakeDamageEvent -= DamageEffect;
         Camera.Die();
 
         Registerer.UnregisterUpdatable(this);

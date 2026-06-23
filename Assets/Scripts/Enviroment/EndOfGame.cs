@@ -1,15 +1,20 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class EndOfGame : MonoBehaviour
 {
-    public Image titles;
-    private void Awake()
+    private RectTransform rectTransform;
+    void Start()
     {
-        titles.enabled = false;
+        rectTransform = GetComponent<RectTransform>();
     }
-    public void RunTitles()
+    private void Update()
     {
-        titles.enabled = true;
+        GoUp();
+    }
+    private void GoUp()
+    {
+        rectTransform.anchoredPosition -= new Vector2(0, 50f * Time.deltaTime);
     }
 }
