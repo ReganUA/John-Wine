@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HealingOrb : Controller, IUpdatable
 {
-    GameObject playerTarget; 
+    Unit playerTarget; 
     void Start()
     {
         _unit = GetComponent<Unit>();
@@ -22,8 +22,7 @@ public class HealingOrb : Controller, IUpdatable
     {
         if (collision.CompareTag("Player"))
         {
-            collision.TryGetComponent(out Unit unit);
-            OnHit(unit);
+            OnHit(playerTarget);
         }
     }
     void OnHit(Unit hitUnit)
