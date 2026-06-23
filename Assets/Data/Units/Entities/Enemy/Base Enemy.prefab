@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   _unit: {fileID: 1759939131112494190}
   FirePoint: {fileID: 6319302436688645158}
-  _useWeapon: 0
+  _useWeapon: 1
   healingOrbPrefab: {fileID: 3042106670357236283, guid: a8f0ca7e24cb1b3479104f7a440ade72, type: 3}
 --- !u!195 &3288653584562655607
 NavMeshAgent:
