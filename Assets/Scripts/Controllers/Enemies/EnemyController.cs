@@ -50,7 +50,7 @@ public sealed class EnemyController : Controller, IUpdatable
         WaveSpawner.instance.EnemyDied(gameObject);
 
         if (healingOrbPrefab != null)
-            Instantiate(healingOrbPrefab, transform.position, Quaternion.identity);
+            Instantiate(healingOrbPrefab, new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), Quaternion.identity);
 
         Destroy(gameObject);
     }

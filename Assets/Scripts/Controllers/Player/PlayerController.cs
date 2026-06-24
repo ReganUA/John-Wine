@@ -23,7 +23,6 @@ public sealed class PlayerController : Controller, IUpdatable
     public override void OnStart()
     {
         _unit.OnHealthIsZero += _unit.Die;
-        _unit.OnTakeDamageEvent += DamageEffect;
         Registerer.RegisterUpdatable(this);
         _moveStats = _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover);
         _unit.ChangeAbility(0);
@@ -33,7 +32,8 @@ public sealed class PlayerController : Controller, IUpdatable
         if (DamageEffecto.instance != null)
         {
             damageEffect = DamageEffecto.instance.GetComponent<Image>();
-            damageEffect.gameObject.SetActive(false);
+
+            damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 0f);
         } else
         {
             StartCoroutine(LaterLoad());
@@ -59,6 +59,7 @@ public sealed class PlayerController : Controller, IUpdatable
         HandleJump(dt);
         HandleWeaponChange();
         HandleWeapon(dt);
+        DamageEffect();
 
         _unit.UnitSO.SimComponents.Movers.Mover.Move(_unit, moveDir, dt);
 
@@ -138,19 +139,14 @@ public sealed class PlayerController : Controller, IUpdatable
     }
     public void DamageEffect()
     {
-        Debug.Log("receieved damage");
-        damageEffect.gameObject.SetActive(true);
-        StartCoroutine(DamageEffectRoutine(damageEffectTime));
-    }
-    private IEnumerator DamageEffectRoutine(float s)
-    {
-        yield return new WaitForSeconds(s);
-        damageEffect.gameObject.SetActive(false);
+        if (damageEffect == null) return;
+
+        float healthPercent = _unit.State.HealthState.HealthDelta;
+        damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f - healthPercent);
     }
     public override void OnDeath()
     {
         _unit.OnHealthIsZero -= _unit.Die;
-        _unit.OnTakeDamageEvent -= DamageEffect;
         Camera.Die();
 
         Registerer.UnregisterUpdatable(this);
@@ -171,7 +167,7 @@ public sealed class PlayerController : Controller, IUpdatable
         yield return new WaitForEndOfFrame();
 
         damageEffect = DamageEffecto.instance.GetComponent<Image>();
-        damageEffect.gameObject.SetActive(false);
+        damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 0f);
     }
     private void UpdateAnimation()
     {

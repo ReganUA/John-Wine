@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DefaultEnemyMover
   m_EditorClassIdentifier: Assembly-CSharp::DefaultMover
   <Stats>k__BackingField:
-    MaxSpeed: 5
+    MaxSpeed: 8
     Acceleration: 10
     Deceleration: 10
     AirDeceleration: 0

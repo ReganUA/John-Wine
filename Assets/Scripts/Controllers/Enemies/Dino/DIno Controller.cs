@@ -7,6 +7,7 @@ public class DInoController : Controller, IUpdatable
 
     private EnemyPathfinding _pf;
     private Animator _anim;
+    [SerializeField] private GameObject titles;
     void Start() => _unit.OnSpawn();
     public override void OnStart()
     {
@@ -43,7 +44,8 @@ public class DInoController : Controller, IUpdatable
         Registerer.UnregisterUpdatable(this);
         WaveSpawner.instance.EnemyDied(gameObject);
 
-        //trigger smth
+        titles.SetActive(true);
+        gameObject.SetActive(false);
     }
     private void UpdateAnimation()
     {
