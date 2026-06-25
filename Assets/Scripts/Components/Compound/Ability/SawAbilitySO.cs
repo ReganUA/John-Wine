@@ -42,7 +42,7 @@ public class SawAbilitySO : AbilitySO
         if (LaunchComponents.UnitSpawner != null)
         {
             spawned = LaunchComponents.UnitSpawner.Spawn(firePointPos, sourceUnit);
-            if (spawned != null && spawned.ControllerScript is IAbilityConfigCarrier abilityCarrier)
+            if (spawned != null && spawned.ControllerScript is ISpawned abilityCarrier)
                 abilityCarrier.abilitySO = this;
             spawned.OnSpawn(sourceUnit);
         }

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Materials/Skybox/galaxy/unity skybox bottom.png.meta
 guid: 5dd7f318cbd552148998f774819fc19a
+========
+guid: 1171f0ff9c717744b8b5d7450492badd
+>>>>>>>> Components:Assets/Materials/Skybox/galaxy/unity skybox left.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

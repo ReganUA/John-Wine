@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fd0b7dc23eb4f8499ef21d855ebde4e, type: 3}
-  m_Name: AbilityAdderSensor
-  m_EditorClassIdentifier: Assembly-CSharp::DefaultSensor
+  m_Script: {fileID: 11500000, guid: 81e9d25613f45594eabac995dd803d70, type: 3}
+  m_Name: WineBarrelMover
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultMover
   <Stats>k__BackingField:
-    TagFilter: 2
-    LayerFilter:
-      serializedVersion: 2
-      m_Bits: 64
-    TeamsFilter: 2
-    DetectOwner: 0
+    MaxSpeed: 50
+    Acceleration: 99999
+    Deceleration: 0
+    AirDeceleration: 0
+    Gravity: 0
+    JumpForce: 0

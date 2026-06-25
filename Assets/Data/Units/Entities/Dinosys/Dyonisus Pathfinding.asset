@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb2509507caba00408f884e43160bede, type: 3}
-  m_Name: Dinosys Pathfinding
+  m_Name: Dyonisus Pathfinding
   m_EditorClassIdentifier: Assembly-CSharp::PathfindingStats
   maxDistanceSearch: 500
   minDistanceFlank: 1

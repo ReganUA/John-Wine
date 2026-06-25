@@ -86,7 +86,7 @@ public class Unit : MonoBehaviour
 
     public void ChangeAbility(int abilityIndex)
     {
-        if (Abilities[abilityIndex] == null) return;
+        if (abilityIndex >= Abilities.Count || Abilities[abilityIndex] == null) return;
 
         State.CurrentAbility = Abilities[abilityIndex];
         Debug.Log("Current ability: " + State.CurrentAbility.GetType());
@@ -157,7 +157,7 @@ public class HealthState
         _statsRef = stats;
     }
 }
-public interface IAbilityConfigCarrier
+public interface ISpawned
 {
     public AbilitySO abilitySO { get; set; }
 }

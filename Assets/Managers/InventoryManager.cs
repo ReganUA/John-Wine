@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
@@ -8,7 +8,8 @@ public class InventoryManager : MonoBehaviour
     public List<GameObject> heldItems = new();
     public List<GameObject> itemsDisplayed = new();
 
-    public List<List<AbilitySO>> SavedWeapons = new();
+    public List<List<Ability>> SavedWeapons = new();
+    private int _currentlySelected = -1;
     void Awake()
     {
         if (instance == null)
@@ -21,18 +22,28 @@ public class InventoryManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public void SaveWeapon(List<AbilitySO> weapon)
+    public void SaveWeapon(List<Ability> weapon)
     {
         SavedWeapons.Add(weapon);
     }
-    public void GetWeapon(Unit target, ComponentRuntimeStats statsCarrier, int idx)
+    public void SetWeapon(Unit target, ComponentRuntimeStats statsCarrier, int idx)
     {
+        if (idx >= SavedWeapons.Count || SavedWeapons[idx] == null || idx == _currentlySelected) return;
+
+        target.State.CurrentAbility?.Release();
         target.Abilities.Clear();
-        List<Ability> createdAbilities = new List<Ability>();
-        for (int i = 0; i < createdAbilities.Count; i++)
+        target.State.CurrentAbility = null;
+        List<Ability> abilities = new List<Ability>();
+        for (int i = 0; i < SavedWeapons[idx].Count; i++)
         {
-            createdAbilities[i] = SavedWeapons[idx][i].CreateAbility(statsCarrier);
+            Ability ability = SavedWeapons[idx][i];
+
+            ability.ResetReloadProgress();
+            ability.Release();
+
+            abilities.Add(ability);
         }
-        target.Abilities = createdAbilities;
+        _currentlySelected = idx;
+        target.Abilities = abilities;
     }
 }

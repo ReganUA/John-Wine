@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: M16Raycast
   m_EditorClassIdentifier: Assembly-CSharp::DefaultRaycaster
   <Stats>k__BackingField:
-    Range: 15
+    Range: 30
     Layer:
       serializedVersion: 2
       m_Bits: 65
+    Emitter: {fileID: 0}
