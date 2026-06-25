@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "Default Raycaster", menuName = "Components/Simulation/Raycast/Default Raycaster")]
 public class DefaultRaycaster : RaycasterSO
@@ -10,13 +10,16 @@ public class DefaultRaycaster : RaycasterSO
 
         Physics.Raycast(origin, dir, out hit, stats.Range, stats.Layer);
 
-        if (hit.collider != null)
+        float actualLength = hit.collider != null ? hit.distance : stats.Range;
+
+        if (stats.Emitter != null)
         {
-            return hit;
+            var p = stats.Emitter.Emit(new PositionArgs(origin, Quaternion.LookRotation(dir)));
+            var shape = p.shape;
+            shape.scale = new Vector3(shape.scale.x,shape.scale.y, actualLength);
+            shape.position = new Vector3(0f, 0f, actualLength * 0.5f);
+            p.Play();
         }
-        else
-        {
-            return default;
-        }
+        return hit;
     }
 }
