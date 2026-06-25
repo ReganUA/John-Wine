@@ -56,20 +56,22 @@ public class Unit : MonoBehaviour
         BehaviorMachine.OnUpdate(dt);
     }
     public void TakeDamage(float amount)
-    {
-        Debug.Log("hit registered");
-        float finalAmount = amount - Health.Value.Armor;
-        if (finalAmount < 0)
+    {   
+        if (State.HealthState.CurrentHealth - amount > Health.Value.MaxHealth)
         {
-            finalAmount = 0;
-            return;
+            State.HealthState.CurrentHealth = Health.Value.MaxHealth;
         }
-        State.HealthState.CurrentHealth -= finalAmount;
-
-        OnTakeDamageEvent?.Invoke();
-        if (State.HealthState.CurrentHealth <= 0)
+        else
         {
-            OnHealthIsZero?.Invoke();
+            //removed armor cause it blocked healing
+            State.HealthState.CurrentHealth -= amount;
+
+            OnTakeDamageEvent?.Invoke();
+
+            if (State.HealthState.CurrentHealth <= 0)
+            {
+                OnHealthIsZero?.Invoke();
+            }
         }
     }
     public void Die()

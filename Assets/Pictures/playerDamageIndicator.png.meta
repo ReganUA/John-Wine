@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55abdac4dd1d6ed4291a8e3a6cd87dc6
+guid: 25d7db9569282674899afa087ae13338
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: John_Wine_Hand_UI_no_glow_0
+      name: playerDamageIndicator_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 636
-        height: 636
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0610c4a841377f744819a7e293928d01
-      internalID: -1565612711
+      spriteID: 6542374d2b707284ba6a2bf116fb336b
+      internalID: 483338378
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2860f2fc9614fc044bcaeeac07dd0a43
+    spriteID: a8d75c6f9d8ec3e44955c2c433acd3cc
     internalID: 0
     vertices: []
     indices: 
@@ -158,7 +158,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      John_Wine_Hand_UI_no_glow_0: -1565612711
+      playerDamageIndicator_0: 483338378
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

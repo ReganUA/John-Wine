@@ -1,10 +1,12 @@
+using System.Collections;
 using UnityEngine;
 
 public sealed class WeaponAdder : Controller
 {
+    GameObject playerTarget;
     public override void OnStart()
     {
-
+        LaterLoad();
     }
     private void AddWeapon(Unit target)
     {
@@ -21,5 +23,15 @@ public sealed class WeaponAdder : Controller
             if (_unit.UnitSO.SimComponents.Sensor.IsDetectionViable(_unit.Stats, unit, _unit))
                 AddWeapon(unit);
         }
+    }
+    void Update()
+    {
+        if (playerTarget != null)
+            _unit.UnitSO.SimComponents.Movers.RotationalMover.Move(_unit, playerTarget.transform.position, Time.deltaTime);
+    }
+    private IEnumerator LaterLoad()
+    {
+        yield return new WaitForEndOfFrame();
+        playerTarget = GameManager.instance.player;
     }
 }
