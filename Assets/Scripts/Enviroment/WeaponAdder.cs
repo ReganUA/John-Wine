@@ -3,7 +3,7 @@ using UnityEngine;
 
 public sealed class WeaponAdder : Controller
 {
-    GameObject playerTarget;
+    Unit playerTarget;
     public override void OnStart()
     {
         LaterLoad();
@@ -18,11 +18,8 @@ public sealed class WeaponAdder : Controller
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Unit unit))
-        {
-            if (_unit.UnitSO.SimComponents.Sensor.IsDetectionViable(_unit.Stats, unit, _unit))
-                AddWeapon(unit);
-        }
+        if (_unit.UnitSO.SimComponents.Sensor.IsDetectionViable(_unit.Stats, playerTarget, _unit))
+            AddWeapon(playerTarget);
     }
     void Update()
     {
