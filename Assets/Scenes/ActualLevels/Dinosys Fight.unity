@@ -127,6 +127,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 788722}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (36)
@@ -201,6 +249,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 788720}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &788722 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 788720}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &25929593
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,6 +511,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 51286559}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (9)
@@ -526,6 +633,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 51286557}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &51286559 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 51286557}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &56647823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1038,6 +1156,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 125478613}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (11)
@@ -1112,6 +1278,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 125478611}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &125478613 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 125478611}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &127052454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,6 +2193,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 184012899}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (37)
@@ -2090,6 +2315,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 184012897}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &184012899 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 184012897}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &190439049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2807,6 +3043,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 214586899}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (34)
@@ -2881,6 +3165,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 214586897}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &214586899 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 214586897}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &228770261
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2889,6 +3184,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 228770263}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (8)
@@ -2963,6 +3306,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 228770261}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &228770263 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 228770261}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &244200647
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,6 +4214,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 322690076}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (39)
@@ -3934,6 +4336,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 322690074}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &322690076 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 322690074}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &330517650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3942,6 +4355,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 330517652}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (25)
@@ -4016,6 +4477,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 330517650}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &330517652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 330517650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &332009363
 GameObject:
   m_ObjectHideFlags: 0
@@ -4127,6 +4599,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 337443489}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (6)
@@ -4201,6 +4721,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 337443487}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &337443489 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 337443487}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &342290441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4240,6 +4771,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 345971381}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (17)
@@ -4314,6 +4893,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 345971379}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &345971381 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 345971379}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &354840402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4936,6 +5526,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 405126575}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (10)
@@ -5010,6 +5648,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 405126573}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &405126575 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 405126573}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &428587592
 GameObject:
   m_ObjectHideFlags: 0
@@ -5894,6 +6543,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 479961430}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (38)
@@ -5968,6 +6665,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 479961428}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &479961430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 479961428}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &480001215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6405,6 +7113,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 488553499}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (27)
@@ -6479,6 +7235,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 488553497}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &488553499 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 488553497}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &494565365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6597,6 +7364,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 502995706}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (30)
@@ -6671,6 +7486,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 502995704}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &502995706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 502995704}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &515154112
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7396,6 +8222,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 568456157}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (7)
@@ -7470,6 +8344,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 568456155}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &568456157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 568456155}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &573230701
 GameObject:
   m_ObjectHideFlags: 0
@@ -7578,7 +8463,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 749908333, guid: ba0f68783f0c641479ec6b514c2befe9, type: 3}
+  m_Sprite: {fileID: 483338378, guid: 25d7db9569282674899afa087ae13338, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7604,6 +8489,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 600642556}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (28)
@@ -7678,6 +8611,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 600642554}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &600642556 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 600642554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &602991340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7686,6 +8630,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 602991342}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (19)
@@ -7760,6 +8752,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 602991340}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &602991342 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 602991340}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &609601761
 GameObject:
   m_ObjectHideFlags: 0
@@ -7889,6 +8892,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 631791120}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (2)
@@ -7963,6 +9014,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 631791118}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &631791120 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 631791118}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &634126956
 GameObject:
   m_ObjectHideFlags: 0
@@ -9062,6 +10124,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 692802234}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (40)
@@ -9136,6 +10246,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 692802232}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &692802234 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 692802232}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &728662293
 GameObject:
   m_ObjectHideFlags: 0
@@ -10065,6 +11186,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 809258679}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (23)
@@ -10139,6 +11308,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 809258677}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &809258679 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 809258677}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &823109925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10505,6 +11685,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 836066474}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (16)
@@ -10579,6 +11807,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 836066472}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &836066474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 836066472}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &843496175
 GameObject:
   m_ObjectHideFlags: 0
@@ -11672,6 +12911,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 948632371}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (33)
@@ -11746,6 +13033,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 948632369}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &948632371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 948632369}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &963089680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12732,6 +14030,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1106024561}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (44)
@@ -12806,6 +14152,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1106024559}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1106024561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1106024559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1108155783
 GameObject:
   m_ObjectHideFlags: 0
@@ -13004,6 +14361,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1138734670}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (31)
@@ -13078,6 +14483,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1138734668}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1138734670 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1138734668}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1147443552
 GameObject:
   m_ObjectHideFlags: 0
@@ -14862,6 +16278,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1293602793}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (35)
@@ -14936,6 +16400,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1293602791}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1293602793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1293602791}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1298782467
 GameObject:
   m_ObjectHideFlags: 0
@@ -15491,7 +16966,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
@@ -15506,12 +16985,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
       value: DisableInteract
       objectReference: {fileID: 0}
     - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
       value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -15778,6 +17269,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1390766757}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (22)
@@ -15852,6 +17391,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1390766755}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390766757 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1390766755}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1405025239
 GameObject:
   m_ObjectHideFlags: 0
@@ -16161,6 +17711,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1432425262}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (20)
@@ -16235,6 +17833,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1432425260}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1432425262 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1432425260}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &1444122193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16243,6 +17852,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1444122195}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (3)
@@ -16317,6 +17974,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1444122193}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1444122195 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1444122193}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &1446539309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16528,6 +18196,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1478573914}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (32)
@@ -16602,6 +18318,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1478573912}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1478573914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1478573912}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &1479200733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16610,6 +18337,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1479200735}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (24)
@@ -16684,6 +18459,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1479200733}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1479200735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1479200733}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1481400242
 GameObject:
   m_ObjectHideFlags: 0
@@ -16803,6 +18589,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1492601242}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (26)
@@ -16877,6 +18711,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1492601240}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1492601242 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1492601240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1507249978
 GameObject:
   m_ObjectHideFlags: 0
@@ -17039,6 +18884,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1530624947}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (21)
@@ -17113,6 +19006,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1530624945}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1530624947 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1530624945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1533506858
 GameObject:
   m_ObjectHideFlags: 0
@@ -17507,6 +19411,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1617381524}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (42)
@@ -17581,6 +19533,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1617381522}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1617381524 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1617381522}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1623499088
 GameObject:
   m_ObjectHideFlags: 0
@@ -18093,6 +20056,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1677003901}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (5)
@@ -18167,6 +20178,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1677003899}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1677003901 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1677003899}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1685245095
 GameObject:
   m_ObjectHideFlags: 0
@@ -18206,6 +20228,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1701817654}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (43)
@@ -18280,6 +20350,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1701817652}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1701817654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1701817652}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1706702563
 GameObject:
   m_ObjectHideFlags: 0
@@ -19381,6 +21462,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1804139768}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (12)
@@ -19455,6 +21584,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1804139766}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1804139768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1804139766}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &1806479832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19463,6 +21603,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1806479834}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (13)
@@ -19537,6 +21725,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1806479832}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1806479834 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1806479832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1814688295
 GameObject:
   m_ObjectHideFlags: 0
@@ -19756,6 +21955,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1853163542}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (1)
@@ -19830,6 +22077,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1853163540}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1853163542 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1853163540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &1858668973
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20412,6 +22670,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1911458945}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (18)
@@ -20486,6 +22792,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1911458943}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1911458945 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1911458943}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &1915354623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20774,6 +23091,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1925658887}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (29)
@@ -20848,6 +23213,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 1925658885}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1925658887 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 1925658885}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &1927097971
 GameObject:
   m_ObjectHideFlags: 0
@@ -21701,6 +24077,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 2026034619}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (4)
@@ -21775,6 +24199,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 2026034617}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2026034619 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 2026034617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1 &2031796005
 GameObject:
   m_ObjectHideFlags: 0
@@ -22494,6 +24929,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 2117301487}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (15)
@@ -22568,6 +25051,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 2117301485}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117301487 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 2117301485}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &2127916649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22576,6 +25070,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 167501564}
     m_Modifications:
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1329003782}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 2127916651}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: ChangeMaterial
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: DisableInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: InteractiveBaseEnviroment, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2100000, guid: acdd71aa018c5f44e8b5bf7e45f0958a, type: 2}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Material, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4996085710325140061, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
       propertyPath: m_Name
       value: grapewall_high (14)
@@ -22650,6 +25192,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5629070549488865511, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
   m_PrefabInstance: {fileID: 2127916649}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2127916651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4193293349026150319, guid: 47b07a7795326da47bf5f3337f2350c4, type: 3}
+  m_PrefabInstance: {fileID: 2127916649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
 --- !u!1001 &2146187253
 PrefabInstance:
   m_ObjectHideFlags: 0
