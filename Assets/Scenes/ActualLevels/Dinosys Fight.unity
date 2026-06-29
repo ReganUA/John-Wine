@@ -25540,7 +25540,7 @@ PrefabInstance:
     - target: {fileID: 3646740888886516653, guid: 662ca2ce46db1b343bf04636afbde528, type: 3}
       propertyPath: <ControllerScript>k__BackingField
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 5871145836985952900}
     - target: {fileID: 4474769659248626684, guid: 662ca2ce46db1b343bf04636afbde528, type: 3}
       propertyPath: m_Height
       value: 19.33
@@ -25629,6 +25629,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
+--- !u!114 &5871145836985952900 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8756881002868563667, guid: 662ca2ce46db1b343bf04636afbde528, type: 3}
+  m_PrefabInstance: {fileID: 5871145836985952895}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b4bb65bbdfb5774f966e23d1fad72d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DInoController
 --- !u!1001 &6469985846531393445
 PrefabInstance:
   m_ObjectHideFlags: 0
