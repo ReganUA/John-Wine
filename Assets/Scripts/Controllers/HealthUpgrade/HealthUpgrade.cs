@@ -44,6 +44,6 @@ public class HealthUpgrade : Controller
     }
     private void UpdateMaxHealth()
     {
-        //playerTarget.Stats.GetStatsModifiable(playerTarget.UnitSO)
+        //playerTarget.Health.BuffMultiply(playerTarget.Health);
     }
 }
