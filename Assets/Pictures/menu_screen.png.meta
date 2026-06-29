@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4bd1bb9372b24d34ea06fdac41daf609
+guid: bf7662dcaef63d4448908f071b335c73
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: John_Wine_Buffs_SmallShroom_0
+      name: menu_screen_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 313
-        height: 524
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -138,8 +138,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24dc3f1f27bc72845a1ad7634c92d1bb
-      internalID: 1965943437
+      spriteID: 2ace63b8d9bb6ef4b8a0cd742bc09b10
+      internalID: 2128903426
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 763041ad0ef1fff41b6ffcdd7b7d89a0
+    spriteID: 71a86a36a7a078a4fb8cc8bdcabe3ce8
     internalID: 0
     vertices: []
     indices: 
@@ -158,7 +158,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      John_Wine_Buffs_SmallShroom_0: 1965943437
+      menu_screen_0: 2128903426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
