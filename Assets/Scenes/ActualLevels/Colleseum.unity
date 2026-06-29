@@ -9649,7 +9649,17 @@ MonoBehaviour:
   - {fileID: 504767338}
   - {fileID: 504767338}
   - {fileID: 504767338}
-  Interact: []
+  Interact:
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &1060566421
 Transform:
   m_ObjectHideFlags: 0

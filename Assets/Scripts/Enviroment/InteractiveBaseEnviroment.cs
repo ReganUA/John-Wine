@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class InteractiveBaseEnviroment : MonoBehaviour
 {
-    [SerializeField] private UnityEvent onInteract;
+    public UnityEvent onInteract;
     public UnitSO key;
 
     [Header("Rotation")]
@@ -24,7 +24,7 @@ public class InteractiveBaseEnviroment : MonoBehaviour
     [Header("Effects")]
     [SerializeField] private ParticleSystem effect;
 
-    private bool isInteractable = true;
+    [HideInInspector] public bool isInteractable = true;
     public void Interact()
     {
         if (isInteractable == false) return;

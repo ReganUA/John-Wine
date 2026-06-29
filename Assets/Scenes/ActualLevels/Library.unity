@@ -12535,6 +12535,8 @@ MonoBehaviour:
       m_Calls: []
   - m_PersistentCalls:
       m_Calls: []
+  - m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &338998678
 Transform:
   m_ObjectHideFlags: 0

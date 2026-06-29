@@ -24,23 +24,7 @@ public class ItemSys : Controller, IUpdatable
         {
             StartCoroutine(LoadInterfaceLater());
         }
-        
-        if (InventoryManager.instance != null)
-        {
-            if (InventoryManager.instance.itemsDisplayed.Count > 0)
-            {
-                if (itemDisplay.childCount == 0)
-                {
-                    foreach (GameObject item in InventoryManager.instance.itemsDisplayed)
-                    {
-                        Instantiate(imagePrefab, itemDisplay);
-                    }
-                }
-            }
-        } else
-        {
-            StartCoroutine(LoadInterfaceLater2());
-        }
+        StartCoroutine(LoadInterfaceLater2());
     }
     public bool GetKey(InteractiveBaseEnviroment target)
     {
