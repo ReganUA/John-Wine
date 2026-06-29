@@ -83968,6 +83968,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AbilityItem
       objectReference: {fileID: 0}
+    - target: {fileID: 9049012922610819229, guid: 6ac618b726019f94f94efc6323c8dc4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
