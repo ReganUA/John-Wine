@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
-  m_Name: DoubleScyte
+  m_Name: PicRocketLauncher
   m_EditorClassIdentifier: Assembly-CSharp::UnitSO
   StatsTemplate: {fileID: 0}
   SimComponents:
@@ -21,7 +21,7 @@ MonoBehaviour:
       Mover: {fileID: 0}
       RotationalMover: {fileID: 11400000, guid: 71bdcf62063cc9149a23b540c0698647, type: 2}
     Abilities:
-    - {fileID: 11400000, guid: 532a686fddc8dc24087c934a6783609e, type: 2}
+    - {fileID: 11400000, guid: 914f291329183a64f9452f968b430af1, type: 2}
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
