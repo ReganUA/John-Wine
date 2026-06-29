@@ -62122,6 +62122,9 @@ MonoBehaviour:
   - sourceTeam: 1
     allyTowards: 0
     enemyTowards: 13
+  - sourceTeam: 2
+    allyTowards: 0
+    enemyTowards: 11
 --- !u!1001 &1562160190
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70667,6 +70670,7 @@ MonoBehaviour:
   targetPosition: []
   positionTime: 0
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!1001 &1739875979
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73342,6 +73346,7 @@ MonoBehaviour:
   targetPosition: []
   positionTime: 0
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!1001 &1804932821
 PrefabInstance:
   m_ObjectHideFlags: 0

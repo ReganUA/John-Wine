@@ -1380,6 +1380,9 @@ MonoBehaviour:
   - sourceTeam: 1
     allyTowards: 0
     enemyTowards: 13
+  - sourceTeam: 2
+    allyTowards: 0
+    enemyTowards: 11
 --- !u!1 &191860381
 GameObject:
   m_ObjectHideFlags: 0

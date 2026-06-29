@@ -1421,6 +1421,9 @@ MonoBehaviour:
   - sourceTeam: 1
     allyTowards: 0
     enemyTowards: 13
+  - sourceTeam: 2
+    allyTowards: 0
+    enemyTowards: 11
 --- !u!1001 &308174489
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8481,6 +8484,7 @@ MonoBehaviour:
   targetPosition: []
   positionTime: 0
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!1001 &1753980129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9405,6 +9409,7 @@ MonoBehaviour:
   targetPosition: []
   positionTime: 0
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!1001 &1969150432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10052,6 +10057,7 @@ MonoBehaviour:
   - {x: -64.58, y: 316.54, z: 360.84}
   positionTime: 2
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!135 &2029848482
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10206,6 +10212,7 @@ MonoBehaviour:
   targetPosition: []
   positionTime: 0
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!4 &2098333726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1523656142862729832, guid: af9146918e7ee23498aa2bf0680a839f, type: 3}

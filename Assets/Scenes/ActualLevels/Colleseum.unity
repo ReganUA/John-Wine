@@ -7789,6 +7789,7 @@ MonoBehaviour:
   targetPosition: []
   positionTime: 0
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!1 &827743112
 GameObject:
   m_ObjectHideFlags: 0
@@ -7939,8 +7940,11 @@ MonoBehaviour:
     allyTowards: 0
     enemyTowards: 14
   - sourceTeam: 1
-    allyTowards: 2
+    allyTowards: 0
     enemyTowards: 13
+  - sourceTeam: 2
+    allyTowards: 0
+    enemyTowards: 11
 --- !u!1001 &841511130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9542,6 +9546,7 @@ MonoBehaviour:
   - {x: 11.1, y: 3.06, z: -3.5}
   positionTime: 5
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!1001 &1053614578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13092,6 +13097,7 @@ MonoBehaviour:
   targetPosition: []
   positionTime: 0
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!1 &1604246156
 GameObject:
   m_ObjectHideFlags: 0
@@ -16907,6 +16913,7 @@ MonoBehaviour:
   - {x: 11.1, y: 11.01, z: -3.5}
   positionTime: 5
   effect: {fileID: 0}
+  isInteractable: 1
 --- !u!114 &2424242013656851735
 MonoBehaviour:
   m_ObjectHideFlags: 0
