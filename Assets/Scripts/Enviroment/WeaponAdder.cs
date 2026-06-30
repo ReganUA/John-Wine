@@ -3,10 +3,15 @@ using UnityEngine;
 
 public sealed class WeaponAdder : Controller
 {
-    Unit playerTarget;
+    public Unit playerTarget;
     public override void OnStart()
     {
-        LaterLoad();
+       
+    }
+    void Start()
+    {
+        StartCoroutine(LaterLoad());
+        _unit = GetComponent<Unit>();
     }
     private void AddWeapon(Unit target)
     {
@@ -18,17 +23,20 @@ public sealed class WeaponAdder : Controller
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (_unit.UnitSO.SimComponents.Sensor.IsDetectionViable(_unit.Stats, playerTarget, _unit))
+        if (other.CompareTag("Player"))
             AddWeapon(playerTarget);
     }
     void Update()
     {
         if (playerTarget != null)
+        {
             _unit.UnitSO.SimComponents.Movers.RotationalMover.Move(_unit, playerTarget.transform.position, Time.deltaTime);
+        }
     }
     private IEnumerator LaterLoad()
     {
         yield return new WaitForEndOfFrame();
         playerTarget = GameManager.instance.player;
+        Debug.Log(playerTarget);
     }
 }

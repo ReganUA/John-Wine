@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Unit
   UnitSO: {fileID: 11400000, guid: 9eb0132fa277bd54c921e9cb43d8104c, type: 2}
-  <ControllerScript>k__BackingField: {fileID: 0}
+  <ControllerScript>k__BackingField: {fileID: 1766763267103284905}
   <Turret>k__BackingField: {fileID: 0}
   Refs:
     RB: {fileID: 0}
@@ -142,7 +142,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

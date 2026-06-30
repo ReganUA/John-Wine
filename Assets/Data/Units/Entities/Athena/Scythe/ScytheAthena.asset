@@ -17,7 +17,7 @@ MonoBehaviour:
   LaunchComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
-    AreaSearcher: {fileID: 11400000, guid: 2bdf02487e869d947b7129b9c8382298, type: 2}
+    AreaSearcher: {fileID: 11400000, guid: 04496c09ae8a0ee429cb75928511b263, type: 2}
     Movers:
       Mover: {fileID: 0}
       RotationalMover: {fileID: 0}

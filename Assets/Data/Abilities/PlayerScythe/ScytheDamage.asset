@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ScytheDamage
   m_EditorClassIdentifier: Assembly-CSharp::DealDamageEffect
   <Stats>k__BackingField:
-    Amount: 40
+    Amount: 5

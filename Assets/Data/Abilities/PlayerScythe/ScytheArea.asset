@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: ScytheArea
   m_EditorClassIdentifier: Assembly-CSharp::DefaultAreaSearch
   <Stats>k__BackingField:
-    Size: {x: 6, y: 6, z: 6}
+    Size: {x: 10, y: 0, z: 0}
     Angle: 161
     MaximumTargetCount: 50
     Components:
-      Sensor: {fileID: 11400000, guid: 2ba6f78763df8474ea84a73941cfd0e0, type: 2}
-      Raycaster: {fileID: 11400000, guid: f344a4d906821bd4eaf97b4b1c64231e, type: 2}
+      Sensor: {fileID: 11400000, guid: a533660427509ab4c80ba14c43f7af85, type: 2}
+      Raycaster: {fileID: 11400000, guid: 30a0e23c431a3f84d8a4a1da6a92ed37, type: 2}
       AreaSearcher: {fileID: 0}
       Movers:
         Mover: {fileID: 0}
         RotationalMover: {fileID: 0}
       Abilities: []
       UnitSpawner: {fileID: 0}
-      Effect: {fileID: 11400000, guid: bc4a093e34a85f443baaa6586d82d866, type: 2}
+      Effect: {fileID: 11400000, guid: 78c997875642c9c4eb4b63e309b67b3c, type: 2}
       TemporaryBehaviour: {fileID: 0}
       PeriodicBehaviour: {fileID: 0}
       Emitter: {fileID: 0}

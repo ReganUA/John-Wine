@@ -8,13 +8,13 @@ public class HealthUpgrade : Controller
     public override void OnStart()
     {
         _unit.OnSpawn(null);
-        StartCoroutine(LaterLoad());
     }
 
     void Start()
     {
         _unit = GetComponent<Unit>();
         startPos = transform.position;
+        StartCoroutine(LaterLoad());
     }
 
     void Update()
@@ -44,6 +44,6 @@ public class HealthUpgrade : Controller
     }
     private void UpdateMaxHealth()
     {
-        //playerTarget.Health.BuffMultiply(playerTarget.Health);
+         playerTarget.Health.BuffAdd((new HealthStats() { MaxHealth = playerTarget.Health.Value.MaxHealth * 0.1f}));
     }
 }
