@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ScytheAbility
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAbility
   <Stats>k__BackingField:
-    ReloadSpeed: 0.5
+    ReloadSpeed: 2
   LaunchComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}

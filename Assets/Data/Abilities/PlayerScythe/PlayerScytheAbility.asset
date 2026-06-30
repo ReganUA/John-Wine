@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PlayerScytheAbility
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAbility
   <Stats>k__BackingField:
-    ReloadSpeed: 2
+    ReloadSpeed: 0.5
   LaunchComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
@@ -26,7 +26,7 @@ MonoBehaviour:
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
-    Emitter: {fileID: 0}
+    Emitter: {fileID: 11400000, guid: 17f91367fe73065429afa4b03c200b06, type: 2}
   ImpactComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
