@@ -31,8 +31,14 @@ public class DionysusController : Controller, IUpdatable
     {
         if (_unit.State.CurrentAbility.CanShoot == false) return;
 
-        _anim.SetInteger("Attack", Random.Range(1, 3));
-        //_unit.ChangeAbility(Random.Range(1, 3));
+        int randomAttack = Random.Range(1, 3);
+        if (randomAttack == 1)
+        {
+            _anim.SetTrigger("Attack1");
+        } else
+        {
+            _anim.SetTrigger("Attack2");
+        }
 
         Ability curAbility = _unit.State.CurrentAbility;
 
