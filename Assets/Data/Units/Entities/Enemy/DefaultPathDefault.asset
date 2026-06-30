@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DefaultPathDefault
   m_EditorClassIdentifier: Assembly-CSharp::PathfindingStats
   maxDistanceSearch: 1000
-  minDistanceFlank: 4
-  maxDistanceFlank: 10
+  minDistanceFlank: 6
+  maxDistanceFlank: 18
   stoppingDistance: 3
   tokenPriority: 0

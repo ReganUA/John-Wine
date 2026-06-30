@@ -6270,7 +6270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4332981292509452547, guid: 4b812b52e21f7d14bb3099ac9cba4552, type: 3}
       propertyPath: _maxTokens
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8870321308013867682, guid: 4b812b52e21f7d14bb3099ac9cba4552, type: 3}
       propertyPath: m_Name

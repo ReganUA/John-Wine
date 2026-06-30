@@ -8,6 +8,7 @@ public class HealthUpgrade : Controller, IUpdatable
     void Start()
     {
         _unit.OnSpawn(null);
+        _unit = GetComponent<Unit>();
     }
     public override void OnStart()
     {
