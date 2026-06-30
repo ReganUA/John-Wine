@@ -39,4 +39,4 @@ MonoBehaviour:
     Effect: {fileID: 11400000, guid: 329ee4397c4f1e547b338d8d48970d61, type: 2}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
-    Emitter: {fileID: 0}
+    Emitter: {fileID: 11400000, guid: eac2cc7e2c32f174bbe37b84c9a4138d, type: 2}

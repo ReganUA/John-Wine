@@ -10,6 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b8905332c73de847a066239b8ec2da4, type: 3}
-  m_Name: M16 Emmiter
+  m_Name: m16 impact emiiter
   m_EditorClassIdentifier: Assembly-CSharp::DefaultEmitter
-  _particleSystemPrefab: {fileID: 3500447499476428550, guid: 2b8dd42347a9209408badb16c21dd6cc, type: 3}
+  _particleSystemPrefab: {fileID: 3222894136015626681, guid: f90f7c9408fe4a74b92ae9ff1200dc67, type: 3}
