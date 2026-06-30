@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2192fb16086108244b9113d3e1f27ffa, type: 3}
   m_Name: RocketUnitSpawner
   m_EditorClassIdentifier: Assembly-CSharp::UnitSpawner
-  _prefab: {fileID: 6442516753997952154, guid: 25a11e8d469754c4aa8dad6fad61995b, type: 3}
+  <_prefab>k__BackingField: {fileID: 6442516753997952154, guid: 25a11e8d469754c4aa8dad6fad61995b, type: 3}
   PositionOffset: {x: 0, y: 0, z: 0}
