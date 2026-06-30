@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 72b1639224953fe48a1d885c7c0fb4c2, type: 3}
-  m_Name: LightningBoltExplosion
+  m_Name: LightningSphereExplosion
   m_EditorClassIdentifier: Assembly-CSharp::DefaultAreaSearch
   <Stats>k__BackingField:
-    Size: {x: 2, y: 2, z: 2}
+    Size: {x: 5, y: 5, z: 5}
     Angle: 360
     MaximumTargetCount: 50
     Components:
-      Sensor: {fileID: 11400000, guid: ff8a5278f3e19d74c9cd003500386bbb, type: 2}
+      Sensor: {fileID: 11400000, guid: a2be107f12411b24987e463716213120, type: 2}
       Raycaster: {fileID: 0}
       AreaSearcher: {fileID: 0}
       Movers:
@@ -25,7 +25,7 @@ MonoBehaviour:
         RotationalMover: {fileID: 0}
       Abilities: []
       UnitSpawner: {fileID: 0}
-      Effect: {fileID: 11400000, guid: 5663b2c3853e1ab40abcb17d366c40b9, type: 2}
+      Effect: {fileID: 11400000, guid: d41a3c9082875b7479ea73eb1816d924, type: 2}
       TemporaryBehaviour: {fileID: 0}
       PeriodicBehaviour: {fileID: 0}
       Emitter: {fileID: 0}
