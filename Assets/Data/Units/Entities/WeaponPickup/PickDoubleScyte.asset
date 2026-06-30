@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
   m_Name: PickDoubleScyte
   m_EditorClassIdentifier: Assembly-CSharp::UnitSO
-  StatsTemplate: {fileID: 0}
+  StatsTemplate: {fileID: 11400000, guid: af58ddcb58bc15147b966c5a313ea808, type: 2}
   SimComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
