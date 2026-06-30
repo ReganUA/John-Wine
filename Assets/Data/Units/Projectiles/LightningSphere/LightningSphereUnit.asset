@@ -10,23 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
-  m_Name: AbilityAdderTestUnit
+  m_Name: LightningSphereUnit
   m_EditorClassIdentifier: Assembly-CSharp::UnitSO
-  StatsTemplate: {fileID: 0}
+  StatsTemplate: {fileID: 11400000, guid: 319878fff18debd47864ae3e30080cb0, type: 2}
   SimComponents:
-    Sensor: {fileID: 11400000, guid: ee4462c0b2903a44c9d50c5262b054d7, type: 2}
+    Sensor: {fileID: 11400000, guid: 2ef4a8396aa90024bbfe5a51214a16a2, type: 2}
     Raycaster: {fileID: 0}
     AreaSearcher: {fileID: 0}
     Movers:
-      Mover: {fileID: 0}
-      RotationalMover: {fileID: 11400000, guid: 71bdcf62063cc9149a23b540c0698647, type: 2}
-    Abilities:
-    - {fileID: 11400000, guid: f13997ef93533994d942a66132c5cabe, type: 2}
-    - {fileID: 11400000, guid: 8086d580cfde7554eb21cd232e643e97, type: 2}
+      Mover: {fileID: 11400000, guid: 10bfa25ae7b62f34b88c8c3aa61e7cc3, type: 2}
+      RotationalMover: {fileID: 0}
+    Abilities: []
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
     Emitter: {fileID: 0}
-  Tags: 2
+  Tags: 1
   Team: 1

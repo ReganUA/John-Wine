@@ -34,7 +34,8 @@ public sealed class PlayerController : Controller, IUpdatable
             damageEffect = DamageEffecto.instance.GetComponent<Image>();
 
             damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f);
-        } else
+        }
+        else
         {
             StartCoroutine(LaterLoad());
         }
@@ -63,7 +64,8 @@ public sealed class PlayerController : Controller, IUpdatable
 
         _unit.UnitSO.SimComponents.Movers.Mover.Move(_unit, moveDir, dt);
 
-        _unit.State.CurrentAbility.ReloadProgress(dt);
+        if (_unit.State.CurrentAbility != null)
+            _unit.State.CurrentAbility.ReloadProgress(dt);
     }
     private void HandleGravity(float dt)
     {
