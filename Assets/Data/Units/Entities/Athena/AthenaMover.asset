@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: AthenaMover
   m_EditorClassIdentifier: Assembly-CSharp::DefaultMover
   <Stats>k__BackingField:
-    MaxSpeed: 18
+    MaxSpeed: 14
     Acceleration: 10
     Deceleration: 10
     AirDeceleration: 0

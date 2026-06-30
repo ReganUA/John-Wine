@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
-  m_Name: PlayerUnit
-  m_EditorClassIdentifier: Assembly-CSharp::UnitStats
-  StatsTemplate: {fileID: 11400000, guid: 5d4b616ab7208a242a3e33e1d72919fe, type: 2}
+  m_Name: PickM16
+  m_EditorClassIdentifier: Assembly-CSharp::UnitSO
+  StatsTemplate: {fileID: 0}
   SimComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
     AreaSearcher: {fileID: 0}
     Movers:
-      Mover: {fileID: 11400000, guid: ab5bb72bb7a6a3642b6809ca72b97e83, type: 2}
-      RotationalMover: {fileID: 0}
+      Mover: {fileID: 0}
+      RotationalMover: {fileID: 11400000, guid: ee75785b711893a45a158f3cdb12d3c4, type: 2}
     Abilities:
     - {fileID: 11400000, guid: 4f75e9e2e7296eb4a96e641653e1f913, type: 2}
     UnitSpawner: {fileID: 0}
@@ -27,5 +27,5 @@ MonoBehaviour:
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
     Emitter: {fileID: 0}
-  Tags: 2
-  Team: 1
+  Tags: 0
+  Team: 0
