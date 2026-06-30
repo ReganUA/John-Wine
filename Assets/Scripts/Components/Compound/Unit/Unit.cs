@@ -30,6 +30,7 @@ public class Unit : MonoBehaviour
         {
             Health = new(UnitSO.StatsTemplate.Health);
             State = new(UnitSO.StatsTemplate);
+            State.HealthState.CurrentHealth = Health.Value.HealthOnStart;
         }
         BehaviorMachine = new BehaviorMachine(this);
 
@@ -40,7 +41,6 @@ public class Unit : MonoBehaviour
             Abilities.Add(UnitSO.SimComponents.Abilities[i].CreateAbility(Stats));
         }
 
-        State.HealthState.CurrentHealth = Health.Value.HealthOnStart;
 
         if (UnitSO.SimComponents.TemporaryBehaviour != null)
             UnitSO.SimComponents.TemporaryBehaviour.ApplyBehavior(this);
@@ -56,7 +56,7 @@ public class Unit : MonoBehaviour
         BehaviorMachine.OnUpdate(dt);
     }
     public void TakeDamage(float amount)
-    {   
+    {
         if (State.HealthState.CurrentHealth - amount > Health.Value.MaxHealth)
         {
             State.HealthState.CurrentHealth = Health.Value.MaxHealth;
@@ -79,11 +79,6 @@ public class Unit : MonoBehaviour
         ControllerScript.OnDeath();
         Destroy(gameObject);
     }
-    public void KillCredit()
-    {
-        OnKillEvent?.Invoke();
-    }
-
     public void ChangeAbility(int abilityIndex)
     {
         if (abilityIndex >= Abilities.Count || Abilities[abilityIndex] == null) return;

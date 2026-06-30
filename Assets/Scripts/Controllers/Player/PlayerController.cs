@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -16,44 +17,53 @@ public sealed class PlayerController : Controller, IUpdatable
     private ModifiableStats<MovementStats> _moveStats;
 
     private Animator _anim;
+    private Ability _currentLeftAbility;
+    private Ability _currentRightAbility;
 
     [SerializeField] private Image damageEffect;
     [SerializeField] private float damageEffectTime;
+
     private void Start() => _unit.OnSpawn();
+
     public override void OnStart()
     {
         _unit.OnHealthIsZero += _unit.Die;
         Registerer.RegisterUpdatable(this);
         _moveStats = _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover);
-        _unit.ChangeAbility(0);
+
         GameManager.instance.player = _unit;
         _anim = GetComponentInChildren<Animator>();
+
+        RefreshCurrentWeapons();
 
         if (DamageEffecto.instance != null)
         {
             damageEffect = DamageEffecto.instance.GetComponent<Image>();
-
             damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f);
         }
         else
         {
             StartCoroutine(LaterLoad());
         }
+    }
 
-        //StartCoroutine(BuffTest());
-    }
-    private IEnumerator BuffTest()
+    public void RefreshCurrentWeapons()
     {
-        yield return new WaitForSeconds(2);
-        _unit.Stats.GetStatsModifiable(_unit.UnitSO.SimComponents.Movers.Mover).BuffMultiply(new MovementStats() { Deceleration = 0.1f });
-        Debug.Log("Buff applied.");
+        _currentLeftAbility = (_unit.Abilities.Count > 0) ? _unit.Abilities[0] : null;
+        _currentRightAbility = (_unit.Abilities.Count > 1) ? _unit.Abilities[1] : null;
+
+        _unit.State.CurrentAbility = _currentLeftAbility;
+
+        // Вимога 3: При перемиканні на інший сет (1, 2, 3) — скидаємо прогрес перезарядки обох абілок
+        _currentLeftAbility?.ResetReloadProgress();
+        _currentRightAbility?.ResetReloadProgress();
     }
+
     public void OnUpdate(float dt)
     {
         _unit.OnUpdate(dt);
 
         Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
-
         Vector3 moveDir = ConvertToCameraSpace(input);
 
         HandleGravity(dt);
@@ -64,9 +74,10 @@ public sealed class PlayerController : Controller, IUpdatable
 
         _unit.UnitSO.SimComponents.Movers.Mover.Move(_unit, moveDir, dt);
 
-        if (_unit.State.CurrentAbility != null)
-            _unit.State.CurrentAbility.ReloadProgress(dt);
+        // Обидві абілки завжди оновлюють свій таймер у фоні
+        _unit.State.CurrentAbility.ReloadProgress(dt);
     }
+
     private void HandleGravity(float dt)
     {
         if (_unit.Refs.CC.isGrounded && _unit.State.MoveState.ExternalForcesVelocity.y < 0)
@@ -75,6 +86,7 @@ public sealed class PlayerController : Controller, IUpdatable
         }
         _unit.State.MoveState.ExternalForcesVelocity.y += _unit.Stats.GetStats(_unit.UnitSO.SimComponents.Movers.Mover).Gravity * dt;
     }
+
     private void HandleJump(float dt)
     {
         if (_unit.Refs.CC.isGrounded == true)
@@ -100,34 +112,67 @@ public sealed class PlayerController : Controller, IUpdatable
             _unit.State.MoveState.ExternalForcesVelocity.y = Mathf.Sqrt(_moveStats.Value.JumpForce * -2f * _moveStats.Value.Gravity);
         }
     }
+
     private void HandleWeapon(float dt)
     {
-        if (Input.GetMouseButton(0))
+        // === ЛОГІКА ЛІВОЇ КНОПКИ МИШІ (ЛКМ) ===
+        if (_currentLeftAbility != null && Input.GetMouseButton(0))
         {
-            _unit.State.CurrentAbility.Hold(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), dt);
+            // Вимога 2: Якщо щойно натиснули ЛКМ, змушуємо ПКМ скинути свою перезарядку
+            if (Input.GetMouseButtonDown(0))
+            {
+                _currentRightAbility?.ResetReloadProgress();
+            }
 
-            if (_unit.State.CurrentAbility.CanShoot == false || _unit.State.CurrentAbility.IsBlocked) return;
+            _unit.State.CurrentAbility = _currentLeftAbility;
+            _currentLeftAbility.Hold(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), dt);
 
-            UpdateAnimation();
-            _unit.State.CurrentAbility.Fire(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), _unit);
-            _unit.State.CurrentAbility.ResetReloadProgress();
+            if (_currentLeftAbility.CanShoot && !_currentLeftAbility.IsBlocked)
+            {
+                UpdateAnimation();
+                _currentLeftAbility.Fire(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), _unit);
+                _currentLeftAbility.ResetReloadProgress();
+            }
         }
-        if (Input.GetMouseButtonUp(0))
+        // === ЛОГІКА ПРАВОЇ КНОПКИ МИШІ (ПКМ) ===
+        // Вимога 1: Використовуємо else if. Якщо затиснуто ЛКМ, цей блок фізично не виконається
+        else if (_currentRightAbility != null && Input.GetMouseButton(1))
         {
-            _unit.State.CurrentAbility.Release();
+            // Вимога 2: Якщо щойно натиснули ПКМ, змушуємо ЛКМ скинути свою перезарядку
+            if (Input.GetMouseButtonDown(1))
+            {
+                _currentLeftAbility?.ResetReloadProgress();
+            }
+
+            _unit.State.CurrentAbility = _currentRightAbility;
+            _currentRightAbility.Hold(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), dt);
+
+            if (_currentRightAbility.CanShoot && !_currentRightAbility.IsBlocked)
+            {
+                UpdateAnimation();
+                _currentRightAbility.Fire(new PositionArgs(_unit.Turret.position, _unit.Turret.rotation, _unit.Turret.forward), new PositionArgs(FirePoint.position, FirePoint.rotation, FirePoint.forward), _unit);
+                _currentRightAbility.ResetReloadProgress();
+            }
+        }
+
+        // Звичайний виклик Release при відпусканні кнопок
+        if (Input.GetMouseButtonUp(0) && _currentLeftAbility != null)
+        {
+            _currentLeftAbility.Release();
+        }
+        if (Input.GetMouseButtonUp(1) && _currentRightAbility != null)
+        {
+            _currentRightAbility.Release();
         }
     }
+
     private void HandleWeaponChange()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            _unit.ChangeAbility(0);
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            _unit.ChangeAbility(1);
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) InventoryManager.instance.SetWeapon(_unit, _unit.Stats, 0);
+        else if (Input.GetKeyDown(KeyCode.Alpha2)) InventoryManager.instance.SetWeapon(_unit, _unit.Stats, 1);
+        else if (Input.GetKeyDown(KeyCode.Alpha3)) InventoryManager.instance.SetWeapon(_unit, _unit.Stats, 2);
     }
+
     private Vector3 ConvertToCameraSpace(Vector3 input)
     {
         Vector3 forward = Camera.transform.forward;
@@ -139,23 +184,24 @@ public sealed class PlayerController : Controller, IUpdatable
 
         return Vector3.ClampMagnitude(forward * input.z + right * input.x, 1f);
     }
+
     public void DamageEffect()
     {
         if (damageEffect == null) return;
 
         float healthPercent = _unit.State.HealthState.HealthDelta;
-        Debug.Log(healthPercent);
         damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f - healthPercent);
     }
+
     public override void OnDeath()
     {
         _unit.OnHealthIsZero -= _unit.Die;
         Camera.Die();
 
         Registerer.UnregisterUpdatable(this);
-
-        AsyncOperation operation = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Rigidbody body = hit.collider.attachedRigidbody;
@@ -165,16 +211,16 @@ public sealed class PlayerController : Controller, IUpdatable
         Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
         body.linearVelocity = pushDir * PushPower;
     }
+
     private IEnumerator LaterLoad()
     {
         yield return new WaitForEndOfFrame();
-
         damageEffect = DamageEffecto.instance.GetComponent<Image>();
         damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f);
     }
+
     private void UpdateAnimation()
     {
         _anim.SetTrigger("Attack");
-        _anim.ResetTrigger("Attacl");
     }
 }

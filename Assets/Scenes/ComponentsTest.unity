@@ -2539,7 +2539,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponAdder
   _unit: {fileID: 1472334823}
-  playerTarget: {fileID: 0}
+  WeaponToAdd: []
 --- !u!114 &1472334823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3811,7 +3811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WeaponAdder
   _unit: {fileID: 1963310503}
-  playerTarget: {fileID: 0}
+  WeaponToAdd: []
 --- !u!114 &1963310503
 MonoBehaviour:
   m_ObjectHideFlags: 0
