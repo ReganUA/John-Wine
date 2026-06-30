@@ -1108,11 +1108,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: ShapeModule.type
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: TrailModule.mode
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
+      propertyPath: ShapeModule.angle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: SizeModule.enabled
@@ -1127,12 +1131,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
+      propertyPath: ShapeModule.m_Scale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: ShapeModule.m_Scale.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: ShapeModule.m_Scale.z
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: TrailModule.ribbonCount
@@ -1159,8 +1167,16 @@ PrefabInstance:
       value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: ClampVelocityModule.enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4981496720294260015, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: ShapeModule.alignToDirection
@@ -1280,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8612050557687893640, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.03
+      value: -4.17
       objectReference: {fileID: 0}
     - target: {fileID: 8612050557687893640, guid: 1de2efb0a1fdcba4a9aef76460ce780c, type: 3}
       propertyPath: m_LocalRotation.w
