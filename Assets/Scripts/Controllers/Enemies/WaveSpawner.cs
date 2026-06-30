@@ -56,9 +56,6 @@ public class WaveSpawner : MonoBehaviour
         if (wave.Count == 0)
         {
             if (onInteract.Length == 0) return;
-
-            onInteract[OnInteractIndex].Invoke();
-
             if (infiniteSpawn == true)
             {
                 StartWave();
@@ -66,6 +63,7 @@ public class WaveSpawner : MonoBehaviour
             }
             else
             {
+                onInteract[OnInteractIndex].Invoke();
                 if (OnInteractIndex < onInteract.Length - 1)
                 {
                     OnInteractIndex++;

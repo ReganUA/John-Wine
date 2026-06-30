@@ -139,9 +139,9 @@ public class InteractiveBaseEnviroment : MonoBehaviour
     }
     public void ChangeMaterial(Material material)
     {
-        Renderer[] renderers = GetComponentsInChildren<Renderer>(true);
+        MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>(true);
 
-        foreach (Renderer rend in renderers)
+        foreach (MeshRenderer rend in renderers)
         {
             rend.sharedMaterial = material;
         }

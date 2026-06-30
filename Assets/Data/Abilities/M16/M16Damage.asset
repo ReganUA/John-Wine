@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: M16Damage
   m_EditorClassIdentifier: Assembly-CSharp::DealDamageEffect
   <Stats>k__BackingField:
-    Amount: 10
+    Amount: 2
