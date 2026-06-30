@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 267cb8bb610db1d428b6303be1f041a2, type: 3}
   m_Name: PlayerUnit
-  m_EditorClassIdentifier: Assembly-CSharp::UnitStats
+  m_EditorClassIdentifier: Assembly-CSharp::UnitSO
   StatsTemplate: {fileID: 11400000, guid: 5d4b616ab7208a242a3e33e1d72919fe, type: 2}
   SimComponents:
     Sensor: {fileID: 0}
@@ -20,12 +20,7 @@ MonoBehaviour:
     Movers:
       Mover: {fileID: 11400000, guid: ab5bb72bb7a6a3642b6809ca72b97e83, type: 2}
       RotationalMover: {fileID: 0}
-    Abilities:
-<<<<<<< HEAD
-    - {fileID: 11400000, guid: f13997ef93533994d942a66132c5cabe, type: 2}
-=======
-    - {fileID: 11400000, guid: 4f75e9e2e7296eb4a96e641653e1f913, type: 2}
->>>>>>> a1c265ce20f32cdc94e795391650b6c0ffae6b9e
+    Abilities: []
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
