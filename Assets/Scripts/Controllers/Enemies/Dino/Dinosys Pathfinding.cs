@@ -1,4 +1,5 @@
 using Newtonsoft.Json.Linq;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -24,7 +25,7 @@ public class DinosysPathfidning : MonoBehaviour, IUpdatable
     [SerializeField] private bool ignoreFlank;
     void Start()
     {
-        playerTarget = GameManager.instance.player.transform;
+        StartCoroutine(LaterLoad());
         unit = GetComponent<Unit>();
         Registerer.RegisterUpdatable(this);
         _agent = GetComponent<NavMeshAgent>();
@@ -38,7 +39,7 @@ public class DinosysPathfidning : MonoBehaviour, IUpdatable
         if (isNotMoving)
         {
             float maxSpeed = unit.Stats.GetStats(unit.UnitSO.SimComponents.Movers.Mover).MaxSpeed;
-            unit.Stats.GetStatsModifiable(unit.UnitSO.SimComponents.Movers.Mover).BuffAdd(new MovementStats() {MaxSpeed = -maxSpeed });
+            unit.Stats.GetStatsModifiable(unit.UnitSO.SimComponents.Movers.Mover).BuffAdd(new MovementStats() { MaxSpeed = -maxSpeed });
         }
     }
 
@@ -79,7 +80,7 @@ public class DinosysPathfidning : MonoBehaviour, IUpdatable
         }
         else
         {
-            if(_distanceToPlayer <= _stats.stoppingDistance)
+            if (_distanceToPlayer <= _stats.stoppingDistance)
             {
                 unit.UnitSO.SimComponents.Movers.Mover.Move(unit, Vector3.zero, dt);
             }
@@ -98,5 +99,10 @@ public class DinosysPathfidning : MonoBehaviour, IUpdatable
     public void ReturnSpeedToNormal()
     {
         unit.Stats.GetStatsModifiable(unit.UnitSO.SimComponents.Movers.Mover).BuffAdd(new MovementStats() { MaxSpeed = maxSpeed });
+    }
+    private IEnumerator LaterLoad()
+    {
+        yield return new WaitForEndOfFrame();
+        playerTarget = GameManager.instance.player.transform;
     }
 }

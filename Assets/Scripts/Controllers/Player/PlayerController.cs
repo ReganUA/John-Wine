@@ -33,7 +33,7 @@ public sealed class PlayerController : Controller, IUpdatable
         {
             damageEffect = DamageEffecto.instance.GetComponent<Image>();
 
-            damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 0f);
+            damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f);
         } else
         {
             StartCoroutine(LaterLoad());
@@ -142,6 +142,7 @@ public sealed class PlayerController : Controller, IUpdatable
         if (damageEffect == null) return;
 
         float healthPercent = _unit.State.HealthState.HealthDelta;
+        Debug.Log(healthPercent);
         damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f - healthPercent);
     }
     public override void OnDeath()
@@ -167,7 +168,7 @@ public sealed class PlayerController : Controller, IUpdatable
         yield return new WaitForEndOfFrame();
 
         damageEffect = DamageEffecto.instance.GetComponent<Image>();
-        damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 0f);
+        damageEffect.color = new Color(damageEffect.color.r, damageEffect.color.g, damageEffect.color.b, 1f);
     }
     private void UpdateAnimation()
     {

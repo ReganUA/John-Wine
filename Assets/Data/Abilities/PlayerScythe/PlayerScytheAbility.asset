@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5909d6c7051297147bd4bef3672e183f, type: 3}
+  m_Name: PlayerScytheAbility
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnAbility
+  <Stats>k__BackingField:
+    ReloadSpeed: 0.5
+  LaunchComponents:
+    Sensor: {fileID: 0}
+    Raycaster: {fileID: 0}
+    AreaSearcher: {fileID: 11400000, guid: 2bdf02487e869d947b7129b9c8382298, type: 2}
+    Movers:
+      Mover: {fileID: 0}
+      RotationalMover: {fileID: 0}
+    Abilities: []
+    UnitSpawner: {fileID: 0}
+    Effect: {fileID: 0}
+    TemporaryBehaviour: {fileID: 0}
+    PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 11400000, guid: 17f91367fe73065429afa4b03c200b06, type: 2}
+  ImpactComponents:
+    Sensor: {fileID: 0}
+    Raycaster: {fileID: 0}
+    AreaSearcher: {fileID: 0}
+    Movers:
+      Mover: {fileID: 0}
+      RotationalMover: {fileID: 0}
+    Abilities: []
+    UnitSpawner: {fileID: 0}
+    Effect: {fileID: 0}
+    TemporaryBehaviour: {fileID: 0}
+    PeriodicBehaviour: {fileID: 0}
+    Emitter: {fileID: 0}

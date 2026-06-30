@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Dyonisys
   m_EditorClassIdentifier: Assembly-CSharp::StatsTemplate
   Health:
-    MaxHealth: 500
-    HealthOnStart: 1000
-    Armor: 10
-    Regeneration: 10
+    MaxHealth: 250
+    HealthOnStart: 350
+    Armor: 0
+    Regeneration: 1
     RegenerationDelay: 5

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b1639224953fe48a1d885c7c0fb4c2, type: 3}
+  m_Name: ScytheArea
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultAreaSearch
+  <Stats>k__BackingField:
+    Size: {x: 3, y: 0, z: 0}
+    Angle: 160
+    MaximumTargetCount: 50
+    Components:
+      Sensor: {fileID: 11400000, guid: a533660427509ab4c80ba14c43f7af85, type: 2}
+      Raycaster: {fileID: 11400000, guid: 30a0e23c431a3f84d8a4a1da6a92ed37, type: 2}
+      AreaSearcher: {fileID: 0}
+      Movers:
+        Mover: {fileID: 0}
+        RotationalMover: {fileID: 0}
+      Abilities: []
+      UnitSpawner: {fileID: 0}
+      Effect: {fileID: 11400000, guid: 78c997875642c9c4eb4b63e309b67b3c, type: 2}
+      TemporaryBehaviour: {fileID: 0}
+      PeriodicBehaviour: {fileID: 0}
+      Emitter: {fileID: 0}
