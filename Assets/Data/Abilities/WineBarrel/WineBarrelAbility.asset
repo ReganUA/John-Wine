@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WineBarrelAbility
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAbilitySO
   <Stats>k__BackingField:
-    ReloadSpeed: 1
+    ReloadSpeed: 2
   LaunchComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
