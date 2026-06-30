@@ -4,7 +4,7 @@ using UnityEngine;
 public abstract class RaycasterSO : ScriptableObject
 {
     [field: SerializeField] public RaycastStats Stats { get; private set; }
-    public abstract RaycastHit Raycast(ComponentRuntimeStats statsCarrier, Vector3 origin, Vector3 dir);
+    public abstract RaycastHit Raycast(ComponentRuntimeStats statsCarrier, Vector3 origin, Vector3 dir, PositionArgs sfxPos = default);
 }
 [Serializable]
 public struct RaycastStats

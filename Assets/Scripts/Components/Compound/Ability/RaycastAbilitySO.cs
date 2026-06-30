@@ -34,7 +34,7 @@ public class RaycastAbilitySO : AbilitySO
             spawned.OnSpawn(sourceUnit);
         }
 
-        RaycastHit _hit = LaunchComponents.Raycaster.Raycast(statsCarrier, raycastPos.position, raycastPos.direction);
+        RaycastHit _hit = LaunchComponents.Raycaster.Raycast(statsCarrier, raycastPos.position, raycastPos.direction, firePointPos);
         if (_hit.collider != null)
         {
             _hit.collider.TryGetComponent(out Unit hitUnit);
@@ -43,6 +43,11 @@ public class RaycastAbilitySO : AbilitySO
         }
         else
             Debug.DrawLine(raycastPos.position, raycastPos.position + raycastPos.direction * statsCarrier.GetStats(LaunchComponents.Raycaster).Range, Color.red, 0.05f);
+
+        if (LaunchComponents.Emitter != null)
+        {
+            LaunchComponents.Emitter.Emit(firePointPos);
+        }
 
         return spawned;
     }

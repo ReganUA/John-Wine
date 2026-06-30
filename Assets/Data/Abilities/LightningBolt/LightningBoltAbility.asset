@@ -16,7 +16,7 @@ MonoBehaviour:
     ReloadSpeed: 1
   LaunchComponents:
     Sensor: {fileID: 0}
-    Raycaster: {fileID: 0}
+    Raycaster: {fileID: 11400000, guid: d3669f39896d7ca4cb742facc6263619, type: 2}
     AreaSearcher: {fileID: 0}
     Movers:
       Mover: {fileID: 0}
