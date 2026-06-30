@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b8905332c73de847a066239b8ec2da4, type: 3}
   m_Name: LightningBoltExplosionEmitter
   m_EditorClassIdentifier: Assembly-CSharp::DefaultEmitter
-  _particleSystemPrefab: {fileID: 0}
+  _particleSystemPrefab: {fileID: 5331830665964755186, guid: 9e2e904bcdd9e9c4eb609951fd0b7420, type: 3}

@@ -81,6 +81,8 @@ public class RaycastAbilitySO : AbilitySO
             Unit spawned = ImpactComponents.UnitSpawner.Spawn(new PositionArgs(hitPos.position, Quaternion.identity), sourceUnit);
             spawned.OnSpawn(sourceUnit);
         }
+        if (ImpactComponents.Emitter != null)
+            ImpactComponents.Emitter.Emit(new PositionArgs(hitPos.position, Quaternion.identity));
     }
     public override Ability CreateAbility(ComponentRuntimeStats statsCarrier)
     {
