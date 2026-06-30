@@ -3,14 +3,13 @@ using UnityEngine;
 
 public sealed class WeaponAdder : Controller, IUpdatable
 {
-    public Unit playerTarget;
+    void Start()
+    {
+        _unit.OnSpawn(null);
+    }
     public override void OnStart()
     {
         Registerer.RegisterUpdatable(this);
-    }
-    void Start()
-    {
-        StartCoroutine(LaterLoad());
     }
     private void AddWeapon(Unit target)
     {
@@ -24,20 +23,14 @@ public sealed class WeaponAdder : Controller, IUpdatable
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
-            AddWeapon(playerTarget);
+            AddWeapon(GameManager.instance.player);
     }
     public void OnUpdate(float dt)
     {
-        if (playerTarget != null)
+        if (GameManager.instance.player != null)
         {
-            _unit.UnitSO.SimComponents.Movers.RotationalMover.Move(_unit, playerTarget.transform.position, Time.deltaTime);
+            _unit.UnitSO.SimComponents.Movers.RotationalMover.Move(_unit, GameManager.instance.player.transform.position, Time.deltaTime);
         }
-    }
-    private IEnumerator LaterLoad()
-    {
-        yield return new WaitForEndOfFrame();
-        playerTarget = GameManager.instance.player;
-        Debug.Log(playerTarget);
     }
     public override void OnDeath()
     {
