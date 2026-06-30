@@ -9,20 +9,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948c1b27de7d835478372682b7c46f6e, type: 3}
-  m_Name: LightningBoltAbility
-  m_EditorClassIdentifier: Assembly-CSharp::RaycastAbilitySO
+  m_Script: {fileID: 11500000, guid: 5909d6c7051297147bd4bef3672e183f, type: 3}
+  m_Name: LightningSphereAbility
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnAbilitySO
   <Stats>k__BackingField:
-    ReloadSpeed: 1
+    ReloadSpeed: 2
   LaunchComponents:
     Sensor: {fileID: 0}
-    Raycaster: {fileID: 11400000, guid: d3669f39896d7ca4cb742facc6263619, type: 2}
+    Raycaster: {fileID: 0}
     AreaSearcher: {fileID: 0}
     Movers:
       Mover: {fileID: 0}
       RotationalMover: {fileID: 0}
     Abilities: []
-    UnitSpawner: {fileID: 0}
+    UnitSpawner: {fileID: 11400000, guid: 7664f30214015004188e7f3b15a5182f, type: 2}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
@@ -30,7 +30,7 @@ MonoBehaviour:
   ImpactComponents:
     Sensor: {fileID: 0}
     Raycaster: {fileID: 0}
-    AreaSearcher: {fileID: 11400000, guid: 5c9488e47dcb2874b842e46f2678be41, type: 2}
+    AreaSearcher: {fileID: 11400000, guid: 812e03836b170e24aadaef8118eeedeb, type: 2}
     Movers:
       Mover: {fileID: 0}
       RotationalMover: {fileID: 0}
@@ -39,4 +39,4 @@ MonoBehaviour:
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
     PeriodicBehaviour: {fileID: 0}
-    Emitter: {fileID: 11400000, guid: 0a7c128fa657fad46bb7f33fbfaeea75, type: 2}
+    Emitter: {fileID: 11400000, guid: ca3ef8f61ec24e24f9c3fcb8cbc8b405, type: 2}

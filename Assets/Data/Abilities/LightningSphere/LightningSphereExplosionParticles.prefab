@@ -54,7 +54,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4952,6 +4952,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: playOnAwake
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: ShapeModule.type
       value: 0
       objectReference: {fileID: 0}
@@ -5107,6 +5111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightningSphereExplosionParticles (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3987034593837181812, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8125407046087764311, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -5172,6 +5180,10 @@ PrefabInstance:
     - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: lengthInSec
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: playOnAwake
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: ShapeModule.type
@@ -5353,6 +5365,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightningSphereExplosionParticles (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3987034593837181812, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8125407046087764311, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: m_Materials.Array.size
       value: 2
@@ -5422,6 +5438,10 @@ PrefabInstance:
     - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: lengthInSec
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: playOnAwake
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: ShapeModule.type
@@ -5583,6 +5603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LightningSphereExplosionParticles (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3987034593837181812, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8125407046087764311, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
@@ -5648,6 +5672,10 @@ PrefabInstance:
     - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: lengthInSec
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: playOnAwake
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3550770831575028309, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: ShapeModule.type
@@ -5828,6 +5856,10 @@ PrefabInstance:
     - target: {fileID: 3987034593837181812, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: m_Name
       value: LightningSphereExplosionParticles (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3987034593837181812, guid: d786e0405958ff248ad466f380c88844, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8125407046087764311, guid: d786e0405958ff248ad466f380c88844, type: 3}
       propertyPath: m_Materials.Array.size
