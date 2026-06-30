@@ -65,7 +65,7 @@ public class ItemSys : Controller, IUpdatable
     {
         yield return new WaitForEndOfFrame();
 
-        if (InventoryManager.instance.itemsDisplayed.Count > 0)
+        if (InventoryManager.instance.heldItems.Count > 0)
         {
             if (itemDisplay.childCount == 0)
             {

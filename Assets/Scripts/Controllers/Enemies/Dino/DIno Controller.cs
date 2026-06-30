@@ -34,9 +34,11 @@ public class DionysusController : Controller, IUpdatable
         int randomAttack = Random.Range(1, 3);
         if (randomAttack == 1)
         {
+            Debug.Log("Triggered anim 1");
             _anim.SetTrigger("Attack1");
         } else
         {
+            Debug.Log("Triggered anim 2");
             _anim.SetTrigger("Attack2");
         }
 
