@@ -2687,6 +2687,28 @@ Transform:
   - {fileID: 877970946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &569475225 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 310562057224407494, guid: 16f6c4bae00146948933e4fc8d36f1aa, type: 3}
+  m_PrefabInstance: {fileID: 1750927590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9ffb7339f386e4baba3268529e450b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthUpgrade
+--- !u!114 &569475226 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3071884167505652407, guid: 16f6c4bae00146948933e4fc8d36f1aa, type: 3}
+  m_PrefabInstance: {fileID: 1750927590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 908b7dff137590640873c8c7278f4718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Unit
 --- !u!1001 &603740712
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7611,6 +7633,10 @@ PrefabInstance:
       propertyPath: _unit
       value: 
       objectReference: {fileID: 380462512}
+    - target: {fileID: 1766763267103284905, guid: 6ac618b726019f94f94efc6323c8dc4c, type: 3}
+      propertyPath: playerTarget
+      value: 
+      objectReference: {fileID: 2144450805}
     - target: {fileID: 1867058761615789157, guid: 6ac618b726019f94f94efc6323c8dc4c, type: 3}
       propertyPath: UnitSO
       value: 
@@ -7677,7 +7703,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9049012922610819229, guid: 6ac618b726019f94f94efc6323c8dc4c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8600,6 +8626,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 310562057224407494, guid: 16f6c4bae00146948933e4fc8d36f1aa, type: 3}
+      propertyPath: _unit
+      value: 
+      objectReference: {fileID: 569475226}
     - target: {fileID: 1453669677457742510, guid: 16f6c4bae00146948933e4fc8d36f1aa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -64.72886
@@ -8640,13 +8670,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3071884167505652407, guid: 16f6c4bae00146948933e4fc8d36f1aa, type: 3}
+      propertyPath: <ControllerScript>k__BackingField
+      value: 
+      objectReference: {fileID: 569475225}
     - target: {fileID: 4960991305782487983, guid: 16f6c4bae00146948933e4fc8d36f1aa, type: 3}
       propertyPath: m_Name
       value: HealthUpgrade
       objectReference: {fileID: 0}
     - target: {fileID: 4960991305782487983, guid: 16f6c4bae00146948933e4fc8d36f1aa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

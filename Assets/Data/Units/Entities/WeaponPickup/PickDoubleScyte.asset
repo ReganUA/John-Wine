@@ -19,7 +19,7 @@ MonoBehaviour:
     AreaSearcher: {fileID: 0}
     Movers:
       Mover: {fileID: 0}
-      RotationalMover: {fileID: 11400000, guid: 71bdcf62063cc9149a23b540c0698647, type: 2}
+      RotationalMover: {fileID: 11400000, guid: ee75785b711893a45a158f3cdb12d3c4, type: 2}
     Abilities:
     - {fileID: 11400000, guid: 532a686fddc8dc24087c934a6783609e, type: 2}
     UnitSpawner: {fileID: 0}

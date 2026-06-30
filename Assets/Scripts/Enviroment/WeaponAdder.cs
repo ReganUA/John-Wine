@@ -1,17 +1,16 @@
 using System.Collections;
 using UnityEngine;
 
-public sealed class WeaponAdder : Controller
+public sealed class WeaponAdder : Controller, IUpdatable
 {
     public Unit playerTarget;
     public override void OnStart()
     {
-       
+        Registerer.RegisterUpdatable(this);
     }
     void Start()
     {
         StartCoroutine(LaterLoad());
-        _unit = GetComponent<Unit>();
     }
     private void AddWeapon(Unit target)
     {
@@ -19,6 +18,7 @@ public sealed class WeaponAdder : Controller
         {
             target.AddAbility(_unit.UnitSO.SimComponents.Abilities[i].CreateAbility(target.Stats));
             Debug.Log("AddedWeapon");
+            _unit.Die();
         }
     }
     private void OnTriggerEnter(Collider other)
@@ -26,7 +26,7 @@ public sealed class WeaponAdder : Controller
         if (other.CompareTag("Player"))
             AddWeapon(playerTarget);
     }
-    void Update()
+    public void OnUpdate(float dt)
     {
         if (playerTarget != null)
         {
@@ -38,5 +38,9 @@ public sealed class WeaponAdder : Controller
         yield return new WaitForEndOfFrame();
         playerTarget = GameManager.instance.player;
         Debug.Log(playerTarget);
+    }
+    public override void OnDeath()
+    {
+        Registerer.UnregisterUpdatable(this);
     }
 }

@@ -4568,8 +4568,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: EnemyPathfinding, Assembly-CSharp
+      - m_Target: {fileID: 5871145836985952897}
+        m_TargetAssemblyTypeName: DinosysPathfidning, Assembly-CSharp
         m_MethodName: ReturnSpeedToNormal
         m_Mode: 1
         m_Arguments:
@@ -25934,6 +25934,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bab21ca745c933448805e2bc4cc2aa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractiveBaseEnviroment
+--- !u!114 &5871145836985952897 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4888915583512063148, guid: 662ca2ce46db1b343bf04636afbde528, type: 3}
+  m_PrefabInstance: {fileID: 5871145836985952895}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d7927b090d4dd44bfc64c236a466db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DinosysPathfidning
 --- !u!114 &5871145836985952900 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8756881002868563667, guid: 662ca2ce46db1b343bf04636afbde528, type: 3}
@@ -26673,7 +26684,7 @@ PrefabInstance:
     - target: {fileID: 4851608417651943956, guid: ebe6b71ec128c0f44b9c55a9542d14f1, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2696774352917237980, guid: a9b7b40a780ce304bb41a4c0d554bb36, type: 3}
+      objectReference: {fileID: 6259187374222106934, guid: a9b7b40a780ce304bb41a4c0d554bb36, type: 3}
     - target: {fileID: 6025641386218370718, guid: ebe6b71ec128c0f44b9c55a9542d14f1, type: 3}
       propertyPath: m_Name
       value: GameManager

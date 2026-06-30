@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Unit
   UnitSO: {fileID: 11400000, guid: 5415fcd6cb9937041a3cb9d0fe469cb1, type: 2}
-  <ControllerScript>k__BackingField: {fileID: 0}
+  <ControllerScript>k__BackingField: {fileID: 310562057224407494}
   <Turret>k__BackingField: {fileID: 0}
   Refs:
     RB: {fileID: 0}

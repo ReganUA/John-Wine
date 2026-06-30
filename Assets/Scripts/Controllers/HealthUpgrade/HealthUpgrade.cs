@@ -1,23 +1,23 @@
 using System.Collections;
 using UnityEngine;
 
-public class HealthUpgrade : Controller
+public class HealthUpgrade : Controller, IUpdatable
 {
     [HideInInspector] Unit playerTarget;
     private Vector3 startPos;
-    public override void OnStart()
+    void Start()
     {
         _unit.OnSpawn(null);
     }
-
-    void Start()
+    public override void OnStart()
     {
-        _unit = GetComponent<Unit>();
         startPos = transform.position;
         StartCoroutine(LaterLoad());
+        Registerer.RegisterUpdatable(this);
     }
 
-    void Update()
+
+    public void OnUpdate(float dt)
     {
         if (playerTarget != null)
             _unit.UnitSO.SimComponents.Movers.RotationalMover.Move(_unit, playerTarget.transform.position, Time.deltaTime);
@@ -40,10 +40,15 @@ public class HealthUpgrade : Controller
         if (collision.CompareTag("Player"))
         {
             UpdateMaxHealth();
+            _unit.Die();
         }
     }
     private void UpdateMaxHealth()
     {
-         playerTarget.Health.BuffAdd((new HealthStats() { MaxHealth = playerTarget.Health.Value.MaxHealth * 0.1f}));
+        playerTarget.Health.BuffAdd((new HealthStats() { MaxHealth = playerTarget.Health.Value.MaxHealth * 0.1f }));
+    }
+    public override void OnDeath()
+    {
+        Registerer.UnregisterUpdatable(this);
     }
 }
