@@ -22,6 +22,11 @@ MonoBehaviour:
       RotationalMover: {fileID: 0}
     Abilities:
     - {fileID: 11400000, guid: 01a9c15b7596f1140afa8ff5d8965739, type: 2}
+    - {fileID: 11400000, guid: 532a686fddc8dc24087c934a6783609e, type: 2}
+    - {fileID: 11400000, guid: 4f75e9e2e7296eb4a96e641653e1f913, type: 2}
+    - {fileID: 11400000, guid: f13997ef93533994d942a66132c5cabe, type: 2}
+    - {fileID: 11400000, guid: 8086d580cfde7554eb21cd232e643e97, type: 2}
+    - {fileID: 11400000, guid: 914f291329183a64f9452f968b430af1, type: 2}
     UnitSpawner: {fileID: 0}
     Effect: {fileID: 0}
     TemporaryBehaviour: {fileID: 0}
